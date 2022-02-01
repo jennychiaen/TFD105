@@ -1,0 +1,36 @@
+@import url('all.css');
+
+
+header{
+
+
+}
+header ul{
+    float:right;
+}
+header li{
+    float: left;
+}
+.logo{
+float: left;
+background-color: white;
+width: 342px;
+}
+.banner{
+    position: relative;
+}
+.tag_news{
+    width: 324px;
+    position: absolute;
+    left: 400px;
+    top: 340px;
+}
+.cards{
+    display: flex;
+    
+    flex-wrap: wrap;
+}
+
+.card{
+    width:380px;
+}
