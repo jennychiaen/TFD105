@@ -1,12 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reservation.css">
+  <title>Reservation</title>
 </head>
+
 <body>
-    
+  <div class="wrapper">
+    <header>
+      <div class="logo"><a href="./index.html"><img src="./img/logofinal.svg"></a></div>
+      <ul>
+        <li><a href="./news.html">最新消息</a></li>
+        <li><a href="./camps.html">帳篷旅館</a></li>
+        <li><a href="./activities.html">營區活動</a></li>
+        <li><a href="./diving.html">美食饗宴</a></li>
+        <li><a href="./reservation.html">線上預約</a></li>
+        <li><a href="./location.html">交通指南</a></li>
+      </ul>
+    </header>
+    <main>
+      <div class="banner">
+        <img src="./img/banner.jpg">
+        <div class="tag_reservation"><img src="./img/線上訂房.png"></div>
+      </div>
+      <div class="form">
+        <div class="step01">
+          <h4>step</h4>
+          <h1>01</h1>
+          <div class="form01">
+            <label for="checkin" class="title">請選擇入住日期：</label>
+            <input type="date" id="checkin" name="checkin" class="date">
+          </div>
+          <div class="form02">
+            <label for="checkout" class="title">請選擇退房日期：</label>
+            <input type="date" id="checkout" name="checkout" class="date">
+          </div>
+        </div>
+        <div class="step02">
+          <h4>step</h4>
+          <h1>02</h1>
+          <div class="'form03">
+            <h4>請選擇入住房型:</h4>
+            <select name="num" class="room">
+              <option selected>1 間</option>
+              <option>2 間</option>
+              <option>3 間</option>
+              <option>4 間</option>
+              <option>5 間</option>
+            </select>
+            <select class="people">
+              <option selected>2人房</option>
+              <option>4人房</option>
+            </select>
+          </div>
+        </div>
+        <div class="step03">
+          <h4>step</h4>
+          <h1>03</h1>
+          <div class="form4">
+            <h4> 請填寫訂房者資料：</h4>
+            <div class="check_text">
+              <label for="reservation_name"class="title2">訂房者姓名： </label>
+              <input type="text" name="reservation_name" id="reservation_name" class="reservation_name"placeholder="王大明">
+              <br>
+              <label for="tel" class="title2">手機號碼：</label>
+              <input type="text" id="tel" name="tel" class="tel" placeholder="09xxxxxxxx">
+              <br>
+              <label for="mail" class="title2">E-mail：</label>
+              <input type="text" id="mail" name="mail" class="mail" placeholder="xxxxx@gmail.com">
+              <br>
+              <label class="note">備註：</label>
+              <textarea rows="5" cols="16" name="note" class="note" placeholder="請寫下您的其他需求"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="step04">
+          <h4>step</h4>
+          <h1>04</h1>
+          <div class="form05">
+            <label for="submit" class="title2"> 確認以上資料正確，請按</label>
+            <input type="submit" id="submit" name="submit" class="submit" value="Enter">
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer>
+    <div class="footer">
+      <div class="address">311新竹縣五峰鄉23鄰464號</div>
+      <div class="phone">連絡電話:(03)2929-9890</div>
+      <div class="social_list">
+        <a href="https://www.facebook.com/">
+          <img src="./img/fbiton.png" alt="" class="fb"></a>
+        <a href="https://www.instagram.com/">
+          <img src="./img/instaiton.png" alt="" class="ig"></a>
+      </div>
+      <p>本網站為緯育TibaMe前端設計工程師班第74期學員專題作品，本平台僅供學習、展示之用。
+        <br> 參考資源：Pinterest ｜ CMPVillag｜柚香露露 若有侵權疑慮，您可私訊TibaMe-前端設計工程師 養成班，後續會由專人協助處理。
+      </p>
+    </div>
+  </footer>
+
 </body>
+
 </html>
