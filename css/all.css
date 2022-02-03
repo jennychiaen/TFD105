@@ -4,6 +4,9 @@
     margin: 0 auto;
     width: 1200px;
 }
+main{
+    margin: 0 auto;
+}
 img{
     max-width:100%
 }
