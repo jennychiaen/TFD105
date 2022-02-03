@@ -112,5 +112,9 @@ main{
 }
 
 .insta_photos{
+    display: flex;
+    text-align: center;
     margin-top: 20px;
+    justify-content: space-between;
 }
+ 

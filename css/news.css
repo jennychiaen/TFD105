@@ -1,75 +1,42 @@
 @import url('all.css');
 
-.logo{
-    width: 140px;
-    height: 80px;
-    
-}
-.logo a{
-    display: block;
-    width: 140px;
-    height: 80px;
-    
-}
-.logo a:hover{
-    transform: scale(1.2);
-    display: block;
-    width: 140px;
-    height: 80px;
-}
-header{
-    /* border: 1px solid tomato; */
-    display: flex;
-    height: 100px;
-    align-items: center;
-    margin: 10px 0;
-}
-header ul{
-    
-    display: flex;
-    margin-left: auto;
-    width: 800px;
-    color: black;
-}
-header li{
-    flex-grow: 1;
-}
-/* 800px */
-header li a{
-    color:black;
-    text-decoration: none;
-    font-size: 16px;
-    line-height: 36PX;
-   /* display: block;
-   text-align: center; */
-}
-
-header li a:hover{
-    color: white;
-    background-color: #4E6F40;
-    border-radius: 35px;
-    display: block;
-    width: 133PX;
-    height: 40PX;
-    text-align: center;
-
-}
-/* 以下main */
 .banner{
     position: relative;
+
+}
+.banner img{
+    display: block;
+    margin: 0 auto;
 }
 .tag_news{
     width: 324px;
     position: absolute;
-    left: 400px;
-    top: 340px;
+    left: 440px;
+    top: 180px;
 }
 .cards{
-    display: flex;
     
+    display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    
+   
+}
+.cards h3{
+  color: #4E6F40;
+  font-weight: bold;
+  margin-bottom: 3px;
 }
 
 .card{
-    width:380px;
+    margin-top: 80px;
+    width: 380px;
+    /* border: 1px solid tomato; */
+}
+.text{
+    overflow: hidden;
+    border:1px solid  rgba(78, 111, 64, 0.33); 
+    border-top: 0;
+    padding: 20px;
+    line-height: 1.1;
 }

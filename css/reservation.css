@@ -1,1 +1,16 @@
 @import url("all.css");
+
+.banner{
+    position: relative;
+
+}
+.banner img{
+    display: block;
+    margin: 0 auto;
+}
+.tag_reservation{
+    width: 324px;
+    position: absolute;
+    left: 440px;
+    top: 180px;
+}
