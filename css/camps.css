@@ -10,25 +10,27 @@ main{
     width: 50%;
 }
 .bigphoto{
+
+ display: flex;
+ align-items: center;
+ justify-content: center;
    
-   
-}
-.bigphoto img{
-    
-}
+} 
+
 
 .smallphotos{
     margin-top: 38px;
-    padding-left: 20px;
+    display: flex;
+    justify-content: center;
 }
 .smallphotos img{
-   
     margin-left: 10px;
+  
 }
 .bedicon{
     display: flex;
     justify-content: center;
-    /* border: 1px solid red; */
+    
 } 
 
 .bedicon a{

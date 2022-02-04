@@ -1,1 +1,28 @@
 @import url("all.css");
+.checkin,.checkout{
+    width: 310px;
+    background-color: white;
+    border: 3px solid #4e6f40;
+    border-radius: 30px;
+    font-size: 27px;
+    position: absolute;
+    z-index: 1;
+    
+}
+h2{
+    text-align: center;
+    line-height: 150px;
+
+}
+.main{
+    margin: 0 auto;
+}
+.card{
+    width: 50%;
+    margin-top: 150px;
+}
+
+.card:nth-child(2n){
+    margin-right: 0;
+    margin-left: auto;
+}
