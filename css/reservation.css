@@ -73,7 +73,6 @@ h1{
 }
 
 .form04{
-    /* text-align: center;*/
     line-height: 35px; 
     margin-top: 10px;
     text-align: right;
@@ -86,7 +85,6 @@ h1{
     border: 1px solid #4e6f40;
     border-radius: 15px;
     opacity: .6;
-    /* resize: vertical; */
     vertical-align: text-top;
 }
  .check_text{
