@@ -7,10 +7,105 @@
 .banner img{
     display: block;
     margin: 0 auto;
+    margin-bottom: 70px;
 }
 .tag_reservation{
     width: 324px;
     position: absolute;
     left: 440px;
     top: 180px;
+}
+
+.form{
+    padding-left: 70px;
+    margin: 0 auto;
+    
+}
+
+.steps01, .steps02, .steps03{
+    display: flex;
+}
+
+.steps01>h4, .steps02>h4, .steps03>h4{
+    color: #4e6f40;
+    padding-top: 12px;
+    margin-right: 8px;
+}
+
+h1{
+    color:#CA9429;
+    margin-right: 8px;
+    /* border: 1px solid salmon; */
+   
+}
+.form01{
+    margin-bottom: 5px;
+}
+
+.step01{
+    display: flex;
+    margin-top: 10px;
+}
+
+.form03{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.step02 ,.step03{
+    display: flex;
+    margin-top: 10px;
+}
+.steps03{
+    padding-top: 10px;
+}
+.room, .people, .date,  .reservation_name, .tel, .mail{
+    border: 1px solid #4e6f40;
+    border-radius: 15px;
+    height: 25px;
+    width: 175px;
+    opacity: .6;
+    cursor: pointer;
+}
+
+.people{
+    margin-left: 6px;
+}
+
+.form04{
+    /* text-align: center;*/
+    line-height: 35px; 
+    margin-top: 10px;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.notes{
+    border: 1px solid #4e6f40;
+    border-radius: 15px;
+    opacity: .6;
+    /* resize: vertical; */
+    vertical-align: text-top;
+}
+ .check_text{
+     margin-left:5px;
+ }
+ 
+ .submit{
+     margin-left: 322px;
+     margin-top: 20px;
+     background-color: #4e6f40;
+     color: white;
+     border-radius: 15px;
+     height: 25px;
+     width: 185px;
+     border:0 none;
+     display: block;
+ }
+
+.submit:hover {
+    color: #fff;
+    transform: translateY(-7px);
 }

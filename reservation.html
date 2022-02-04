@@ -29,22 +29,28 @@
       </div>
       <div class="form">
         <div class="step01">
-          <h4>step</h4>
-          <h1>01</h1>
-          <div class="form01">
-            <label for="checkin" class="title">請選擇入住日期：</label>
-            <input type="date" id="checkin" name="checkin" class="date">
+          <div class="steps01">
+            <h4>step</h4>
+            <h1>01</h1>
           </div>
-          <div class="form02">
-            <label for="checkout" class="title">請選擇退房日期：</label>
-            <input type="date" id="checkout" name="checkout" class="date">
+          <div class="form0102">
+            <div class="form01">
+              <label for="checkin" class="title">請選擇入住日期：</label>
+              <input type="date" id="checkin" name="checkin" class="date">
+            </div>
+            <div class="form02">
+              <label for="checkout" class="title">請選擇退房日期：</label>
+              <input type="date" id="checkout" name="checkout" class="date">
+            </div>
           </div>
         </div>
         <div class="step02">
-          <h4>step</h4>
-          <h1>02</h1>
-          <div class="'form03">
-            <h4>請選擇入住房型:</h4>
+          <div class="steps02">
+            <h4>step</h4>
+            <h1>02</h1>
+          </div>
+          <div class="form03">
+            <h4>請選擇入住房型：</h4>
             <select name="num" class="room">
               <option selected>1 間</option>
               <option>2 間</option>
@@ -59,9 +65,11 @@
           </div>
         </div>
         <div class="step03">
-          <h4>step</h4>
-          <h1>03</h1>
-          <div class="form4">
+          <div class="steps03">
+            <h4>step</h4>
+            <h1>03</h1>
+          </div>
+          <div class="form04">
             <h4> 請填寫訂房者資料：</h4>
             <div class="check_text">
               <label for="reservation_name" class="title2">訂房者姓名： </label>
@@ -75,15 +83,12 @@
               <input type="text" id="mail" name="mail" class="mail" placeholder="xxxxx@gmail.com">
               <br>
               <label class="note">備註：</label>
-              <textarea rows="5" cols="16" name="note" class="note" placeholder="請寫下您的其他需求"></textarea>
+              <textarea rows="5" cols="22" name="note" class="notes" placeholder="請寫下您的其他需求"></textarea>
             </div>
           </div>
         </div>
         <div class="step04">
-          <div class="form05">
-            <label for="submit" class="title2"> </label>
-            <input type="submit" id="submit" name="submit" class="submit" value="Enter">
-          </div>
+          <button class="submit">Enter</button>
         </div>
       </div>
     </main>

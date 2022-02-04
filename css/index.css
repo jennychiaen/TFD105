@@ -19,7 +19,8 @@ header ul{
     left: -10px;
     top: 20px;
     padding: 30px 20px;
-    border: 2px solid #CA9429;
+    border: 3px solid rgba(202, 148, 41, 0.68);
+    border-radius: 18px;
 }
 
 main{
