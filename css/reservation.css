@@ -30,9 +30,11 @@
     color: #4e6f40;
     padding-top: 12px;
     margin-right: 8px;
+    margin: 0;
 }
 
 h1{
+    margin: 0;
     color:#CA9429;
     margin-right: 8px;
     /* border: 1px solid salmon; */
@@ -87,11 +89,11 @@ h1{
     opacity: .6;
     vertical-align: text-top;
 }
- .check_text{
+.check_text{
      margin-left:5px;
  }
  
- .submit{
+.submit{
      margin-left: 322px;
      margin-top: 20px;
      background-color: #4e6f40;

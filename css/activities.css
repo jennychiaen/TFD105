@@ -16,13 +16,52 @@ h2{
 }
 .main{
     margin: 0 auto;
+    
+
 }
 .card{
     width: 50%;
     margin-top: 150px;
+    
+    
 }
 
 .card:nth-child(2n){
     margin-right: 0;
     margin-left: auto;
 }
+.cards::after{
+    position: absolute;
+    top:0;
+    height: 100%;
+    left:50%;
+    border:2px solid #4e6f40;
+    content:'';
+    width: 0px;
+    background-color: #4e6f40;
+    margin-left: -3px;
+}
+.cards{
+    position: relative;
+    margin-bottom: 120px;
+}
+
+/* 
+.cards::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: #006E51;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+  } */
+  /*
+  .timeline {
+    position: relative;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 15px 0;
+  } */
