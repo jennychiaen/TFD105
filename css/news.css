@@ -36,6 +36,7 @@
 .text{
     overflow: hidden;
     border:1px solid  rgba(78, 111, 64, 0.33); 
+    box-shadow: inset 0px 0px 3px 1px rgba(78, 111, 64, 0.33);
     border-top: 0;
     padding: 20px;
     line-height: 1.1;
