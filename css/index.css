@@ -119,4 +119,6 @@ main{
     margin-top: 20px;
     justify-content: space-between;
 }
- 
+h2{
+    font-weight: bold;
+}
