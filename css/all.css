@@ -6,6 +6,9 @@
     width: 1200px;
     /* border: 1px solid green; */
 }
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 main{
     margin: 0 auto;
 }
