@@ -1,4 +1,8 @@
 @import url("all.css");
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
 .checkin,.checkout{
     width: 310px;
     background-color: white;
@@ -7,7 +11,7 @@
     font-size: 27px;
     position: absolute;
     z-index: 1;
-    
+    left: calc(50% - 155px);
 }
 h2{
     text-align: center;
@@ -19,33 +23,58 @@ h2{
     
 
 }
+.content{
+    /* overflow: hidden; */
+    /* border:1px solid  rgba(78, 111, 64, 0.33);  */
+    border-top: 0;
+    padding: 20px;
+    line-height: 1.1;
+    border: 1px solid tomato;
+}
 .card{
-    width: 50%;
+    width: 38%;
     margin-top: 150px;
-    
+    position: relative;
     
 }
 
 .card:nth-child(2n){
     margin-right: 0;
     margin-left: auto;
+    /* border: 1px solid black; */
+}
+.card:nth-child(odd){
+    /* border: 1px solid red; */
 }
 .cards::after{
     position: absolute;
     top:0;
-    height: 100%;
     left:50%;
     border:2px solid #4e6f40;
     content:'';
-    width: 0px;
     background-color: #4e6f40;
     margin-left: -3px;
+    height: 100%;
+    /* width: 0px; */
 }
 .cards{
     position: relative;
     margin-bottom: 120px;
 }
 
+.card::after{
+    position: absolute;
+    content:"";
+    border-radius: 50%;
+    border: 3px solid #4e6f40;
+    background-color: white;
+    z-index: 1;
+    width: 16px;
+    height: 16px;
+    top: calc(50% - 10px);
+  
+
+}
 /* 
 .cards::after {
     content: '';
