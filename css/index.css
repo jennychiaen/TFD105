@@ -2,8 +2,8 @@
 
 body{
     background-color: white;
-
 }
+
 
 header{
     position: relative;
@@ -22,8 +22,19 @@ header ul{
     border: 3px solid rgba(202, 148, 41, 0.68);
     border-radius: 18px;
     box-shadow: inset 0px 0px 3px 1px rgba(202,148,41,.68);
+    animation: biglogo .5s cubic-bezier(0, .39,.22,1.39) forwards;
 }
 
+@keyframes biglogo{
+    0%{ left:-400px; }
+    100%{ left: -10px;}
+}
+
+.big_logo a:hover{
+    display: block;
+    color: #fff;
+    transform: translateY(-6px);
+}
 main{
     margin: 0 auto;
     position: relative;
@@ -40,7 +51,14 @@ main{
     width:512px;
     left: 666px;
     top: 375px;
+    animation: slogan .6s .3s ease-out forwards;
 }
+
+@keyframes slogan{
+    0%{ left:1226px; opacity: 0; }
+    100%{ left: 666px; opacity: 1;}
+}
+
 .camps:before{
     content:"";
     display:block;

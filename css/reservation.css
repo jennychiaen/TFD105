@@ -14,8 +14,13 @@
     position: absolute;
     left: 440px;
     top: 180px;
+    animation: tagreservation .6s cubic-bezier(0, .39,.22,1.39) forwards;
 }
 
+@keyframes tagreservation{
+    0%{ left:-130px; opacity: 0; }
+    100%{ left: 440px; opacity: 1;}
+}
 .form{
     padding-left: 70px;
     margin: 0 auto;

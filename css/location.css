@@ -14,6 +14,12 @@
     position: absolute;
     left: 440px;
     top: 180px;
+    animation: taglocation .6s cubic-bezier(0, .39,.22,1.39) forwards;
+}
+
+@keyframes taglocation{
+    0%{ left:-130px; opacity: 0; }
+    100%{ left: 440px; opacity: 1;}
 }
 .content{
     margin-top: 80px;

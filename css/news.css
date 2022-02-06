@@ -13,7 +13,14 @@
     position: absolute;
     left: 440px;
     top: 180px;
+    animation: tagnews .6s cubic-bezier(0, .39,.22,1.39) forwards;
 }
+
+@keyframes tagnews{
+    0%{ left:-130px; opacity: 0; }
+    100%{ left: 440px; opacity: 1;}
+}
+
 .cards{
     
     display: flex;
