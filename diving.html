@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/diving.css">
     <title>Diving</title>
 </head>
@@ -41,8 +42,8 @@
                 <img src="./img/diving1.jpg">
             </div>
             <div class="introduction">
-                <div class="leftside"><img src="./img/diving2.jpg"></div>
-                <div class="rightside">
+                <div class="leftside" data-aos="slide-right" data-aos-duration="2000"><img src="./img/diving2.jpg"></div>
+                <div class="rightside" data-aos="slide-left" data-aos-duration="2000">
                     <h3>環境部分: 半開放空間，讓來的你們沒有都市擁擠的感受。食材部分:使用在地小農新鮮食材。品嘗美味美食當下，蟲鳴鳥叫繚繞，滿天星空。</h3>
                     <div class="pictures">
                         <img src="./img/diving3.jpg">
@@ -51,19 +52,19 @@
                 </div>
             </div>
             <div class="time">
-                <div class="leftside">
+                <div class="leftside" data-aos="slide-right" data-aos-duration="2000">
                     <h2>08:00- 09:00美味早餐</h2>
                     <div class="line"></div>
                     <h2>18:00- 19:30晚餐/BBQ</h2>
                 </div>
-                <div class="rightside"><img src="./img/diving5.jpg"></div>
+                <div class="rightside"  data-aos="slide-left" data-aos-duration="2000"><img src="./img/diving5.jpg"></div>
             </div>
             <div class="all_photos">
-                <div class="leftside">
+                <div class="leftside" data-aos="slide-right" data-aos-duration="2000">
                     <img src="./img/diving6.jpg">
                 </div>
 
-                <div class="rightside">
+                <div class="rightside" data-aos="slide-left" data-aos-duration="2000">
                     <img src="./img/diving9.jpg">
                     <img src="./img/diving10.jpg">
                     <img src="./img/diving7.jpg">
@@ -87,6 +88,10 @@
             </p>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

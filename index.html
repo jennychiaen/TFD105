@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
     <title>index</title>
 </head>
@@ -40,13 +41,13 @@
                 <h2>關於。山景</h2>
             </div>
             <div class="about_cont">
-                <div class="about_img">
+                <div class="about_img" data-aos="slide-right" data-aos-duration="2000"> 
                     <img src="./img/about1-2.jpg">
                 </div>
                 <div class="about_mountain_view">
                     <h2>Mountain view</h2>
                     <h3>位於新竹山區，早晨的山景雲霧繚繞，晚上的山景滿天星空。短暫放下手邊的雜事、離開匆忙的都市腳步感受大自然與清幽感的洗禮，歡迎和家人朋友，一起來山景享受大自然懷抱。</h3>
-                    <img src="./img/about2.jpg">
+                    <img src="./img/about2.jpg" data-aos="slide-left" data-aos-duration="2000">
                 </div>
             </div>
             <div class="instagram">
@@ -79,7 +80,10 @@
             </p>
         </div>
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
