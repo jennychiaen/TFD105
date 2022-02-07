@@ -12,23 +12,19 @@
     position: relative;
     z-index: 1;
     left: calc(50% - 155px);
-
 }
 h2{
     text-align: center;
     line-height: 150px;
-
 }
 .main{
     margin: 0 auto;
 }
-
 .cards{
     position: relative;
     width: 100%;
     margin: 0 auto;
     padding-top: 15px 0;
-
 }
 .cards::after{
     position: absolute;
@@ -40,12 +36,11 @@ h2{
     height: 100%;
     width: 2px;
     margin-bottom: 50px;
-
 }
 
 .card:nth-child(2n)::after {
     left: -68px;
-  }
+}
 .card{
     width: 50%;
     padding: 15px 30px;
@@ -61,7 +56,6 @@ h2{
     line-height: 22px;
 }
 
-
 .card img{
     max-width: 100%;
 }
@@ -72,7 +66,6 @@ h2{
 .card:nth-child(odd){
     left: 0;
 }
-
 
 .card::after{
     position: absolute;

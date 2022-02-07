@@ -42,10 +42,8 @@ main{
 .banner{
     margin: 0 auto;
     text-align: center;
-    
-   
-    
 }
+
 .slogan{
     position: absolute;
     width:512px;
@@ -65,22 +63,15 @@ main{
     border-top: 5px solid #4E6F40;
     width: 105px;
     height: 10px;
-
 }
 .camps{
-   
     margin-top: 50px;
-    
-   
-    
 }
 .camps_photos{
     margin-top: 40px;
     margin-bottom: 20px;
     display: flex;
     justify-content:space-between;
-  
-
 }
 .about:before{
     content:"";
@@ -88,7 +79,6 @@ main{
     border-top: 5px solid #4E6F40;
     width: 125px;
     height: 10px;
-
 }
 .about{
    margin-bottom: 50px;
@@ -100,16 +90,13 @@ main{
     width: 50%;
    
 }
-.about_img img{
-   
-}
+
 .about_mountain_view{
     width:50%;
     margin:0 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-   
 }
 .about_mountain_view h2{
     color: #4E6F40;
@@ -137,7 +124,6 @@ main{
     justify-content: space-between;
     display: flex;
     align-items: center;
- 
 }
 h2{
     font-weight: bold;

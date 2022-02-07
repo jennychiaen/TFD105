@@ -16,8 +16,6 @@ main{
  justify-content: center;
    
 } 
-
-
 .smallphotos{
     margin-top: 38px;
     display: flex;
@@ -25,7 +23,6 @@ main{
 }
 .smallphotos img{
     margin-left: 10px;
-  
 }
 .bedicon{
     display: flex;
@@ -50,7 +47,6 @@ main{
     color: black;
 }
 .onebed{
-   
     margin-right: 30px;
 }
 
