@@ -12,6 +12,7 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
 }
 main{
     margin: 0 auto;
@@ -49,6 +50,7 @@ p{
     display: block;
     width: 140px;
     height: 80px;
+    text-align: center;
     
 }
 .logo a:hover{
@@ -63,12 +65,13 @@ header{
     height: 100px;
     align-items: center;
     margin: 10px 0;
+    text-align: center;
 }
 header ul{
     
     display: flex;
     margin-left: auto;
-    width: 800px;
+    width: 750px;
     color: black;
 }
 header li{
@@ -79,20 +82,26 @@ header li a{
     color:black;
     text-decoration: none;
     font-size: 16px;
-    line-height: 36PX;
-   /* display: block;
-   text-align: center; */
+    line-height: 40PX;
+    width: 120PX;
+    height: 40PX;
+    /* background-color: #4E6F40; */
+    /* text-align: center; */
+   display: block;
+   text-align: center;
 }
 
 header li a:hover{
+    
     color: white;
     background-color: #4E6F40;
     border-radius: 35px;
     display: block;
-    width: 133PX;
+    width: 120PX;
+    line-height: 40PX;
     height: 40PX;
     text-align: center;
-    box-shadow:3px 3px 12px rgba(78, 111, 64, 0.55);
+    box-shadow:1px 1px 8px rgba(78, 111, 64, 0.55);
 
 }
 

@@ -63,10 +63,11 @@ span{
 }
 
 .content li{
-    list-style-type:disc;}
+    list-style-type:disc;
+    font-size: 16px;
+}
 
 .content h4{
-    line-height: 19px;
     margin-bottom: 10px;
 }
 .content table{
@@ -87,6 +88,5 @@ td{
 }
 ul{
     margin-top: 20px;
-    line-height: 16px;
     font-size: 12px;
 }

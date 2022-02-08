@@ -66,14 +66,16 @@
     margin-left: 80px;
     margin-bottom: 80px;
 }
+
+
 .private{
     width: 50%;
-    background: rgba(202, 148, 41, 0.28);
+    background: rgba(202, 148, 41, 0.082);
     border-right: 5px solid #4E6F40;
 }
 .public{
     width: 50%;
-    background: rgba(78, 111, 64, 0.26);
+    background: rgba(78, 111, 64, 0.096);
     box-shadow: inset 0px 0px 3px 1px rgba(78, 111, 64, 0.33);
 }
 
