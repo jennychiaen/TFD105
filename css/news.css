@@ -1,5 +1,6 @@
 @import url('all.css');
 
+/* banner */
 .banner{
     position: relative;
 }
@@ -20,6 +21,7 @@
     100%{ left: 440px; opacity: 1;}
 }
 
+/* main */
 .cards{
     
     display: flex;

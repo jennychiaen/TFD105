@@ -3,6 +3,7 @@
 main{
     display: flex;
 }
+/* photoside */
 .photoside{
     width: 50%;
 }
@@ -24,6 +25,9 @@ main{
 .smallphotos img{
     margin-left: 10px;
 }
+
+/* description-icon*/
+
 .bedicon{
     display: flex;
     justify-content: center;
@@ -50,6 +54,8 @@ main{
     margin-right: 30px;
 }
 
+
+
 span{
     display: block;
     width: 100%;
@@ -58,6 +64,7 @@ span{
     background-color: rgba(78, 111, 64, 0.77);
 }
 
+/* description */
 .content h2{
     margin-bottom: 20px;
 }

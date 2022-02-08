@@ -1,5 +1,6 @@
 @import url("all.css");
 
+/* banner */
 .banner{
     position: relative;
 }
@@ -20,6 +21,9 @@
     0%{ left:-130px; opacity: 0; }
     100%{ left: 440px; opacity: 1;}
 }
+
+/* main-form */
+
 .form{
     padding-left: 70px;
     margin: 0 auto;

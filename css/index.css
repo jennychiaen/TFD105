@@ -1,10 +1,6 @@
 @import url("all.css");
 
-body{
-    background-color: white;
-}
-
-
+/* header */
 header{
     position: relative;
 }
@@ -35,10 +31,8 @@ header ul{
     color: #fff;
     transform: translateY(-6px);
 }
-main{
-    margin: 0 auto;
-    position: relative;
-}
+
+/* banner */
 .banner{
     margin: 0 auto;
     text-align: center;
@@ -55,6 +49,12 @@ main{
 @keyframes slogan{
     0%{ left:1226px; opacity: 0; }
     100%{ left: 666px; opacity: 1;}
+}
+
+/* main */
+main{
+    margin: 0 auto;
+    position: relative;
 }
 
 .camps:before{

@@ -1,5 +1,6 @@
 @import url("all.css");
 
+/* banner */
 .banner{
     position: relative;
 
@@ -21,6 +22,8 @@
     0%{ left:-130px; opacity: 0; }
     100%{ left: 440px; opacity: 1;}
 }
+
+/* main */
 .content{
     margin-top: 80px;
     display: flex;
@@ -79,6 +82,7 @@
     box-shadow: inset 0px 0px 3px 1px rgba(78, 111, 64, 0.33);
 }
 
+/* google_map */
 .googlemap h2{
     margin:40px 0;
     font-weight: 40px;
