@@ -14,8 +14,11 @@ main{
  display: flex;
  align-items: center;
  justify-content: center;
-   
 } 
+
+.fa-chevron-left , .fa-chevron-right{
+    color: #4E6F40;
+}
 
 .smallphotos{
     margin-top: 38px;
@@ -46,10 +49,11 @@ main{
     margin-bottom: 20px;
 }
 .bedicon a:hover{
-    transform: scale(1.1);
+    opacity:0.5;
     display: block;
     text-decoration: none;
     color: black;
+    z-index: 1;
 }
 .onebed{
    
@@ -91,7 +95,7 @@ td{
     text-align: center;
     padding: 5px 0;
 }
-ul{
+main > ul{
     margin-top: 20px;
     font-size: 12px;
 }

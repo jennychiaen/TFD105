@@ -3,6 +3,8 @@
 .wrapper{
     margin: 0 auto;
     width: 1200px;
+    overflow: hidden;
+    max-width: 100%;
     /* border: 1px solid green; */
 }
 
@@ -19,7 +21,7 @@ main{
     margin: 0 auto;
 }
 img{
-    max-width:100%
+    max-width:100%;
 }
 
 /* font-size */
@@ -45,24 +47,34 @@ p{
 /* header */
 
 .logo{
+    display: block;
     width: 140px;
     height: 80px;
+    left: 0;
+    top:0;
+    background-color:whitesmoke ;
+    /* border: 1px solid gray; */
+    /* box-sizing: border-box; */
+    /* margin: 0 auto; */
+    z-index: 1;
+    padding: 20px;
+   
 }
 .logo a{
     display: block;
     width: 140px;
-    height: 80px;
+    height: 100px;
     text-align: center;
+    /* border: 1px solid salmon; */
     
 }
 .logo a:hover{
-    transform: scale(1.2);
+    /* transform: scale(1.2); */
+    opacity: 0.5;
     display: block;
-    width: 140px;
-    height: 80px;
+
 }
 header{
-    /* border: 1px solid tomato; */
     display: flex;
     height: 100px;
     align-items: center;
@@ -70,7 +82,6 @@ header{
     text-align: center;
 }
 header ul{
-    
     display: flex;
     margin-left: auto;
     width: 750px;
@@ -87,13 +98,38 @@ header li a{
     line-height: 40PX;
     width: 120PX;
     height: 40PX;
+    display: block;
+    text-align: center; 
+    border-bottom:3px solid transparent;
+
     /* background-color: #4E6F40; */
     /* text-align: center; */
-   display: block;
-   text-align: center;
-}
+ }
 
-header li a:hover{
+ header li a:hover{
+    color: #4E6f40;
+    font-weight: bold;
+    border-bottom: 3px solid #4E6f40;
+    /* width: 120PX;
+    height: 40PX;
+    line-height: 40PX; */
+    display: block;
+ }
+
+/* header a:after{
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all .3s linear;
+}
+header a:hover::after{
+    width: 100%;
+} */
+/* header li a:hover{
     
     color: white;
     background-color: #4E6F40;
@@ -105,8 +141,20 @@ header li a:hover{
     text-align: center;
     box-shadow:1px 1px 8px rgba(78, 111, 64, 0.55);
 
+} */
+/*  header li:after{
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all .3s linear;
 }
-
+.shape-ex1:hover::after{
+    width: 100%;
+} */
 
 
 

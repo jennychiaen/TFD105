@@ -25,39 +25,31 @@
 
 /* main */
 .content{
-    margin-top: 80px;
     display: flex;
-    border: 1px solid #4E6F40;
-    box-shadow: inset 0px 0px 3px 1px rgba(78, 111, 64, 0.33);
+    margin-top: 30px;
 }
+.transport_private{
+    width: 50%;
+    border-right:5px #4E6F40 dashed;
+}
+.transport_public{
+    width: 50%;
+}
+.content img {
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+    /* border: 4px solid #4E6F40; */
+    /* border-radius: 50%; */
+    padding: 10px;
+}
+
+
 .content h2{
     text-align: center;
     margin-top: 40px;
     margin-bottom: 40px;
     position: relative;
-}
-.content h2::before{
-    content:"";
-    position: absolute;
-    height: 2px;
-    width: 220px;
-    /* border: 1px solid #4E6F40; */
-    background-color:rgba(78, 111, 64, 0.77) ;
-    box-shadow: inset 0px 0px 3px 1px rgba(78, 111, 64, 0.33);
-    top:10px;
-    left:0px;
-}
-
-.content h2::after{
-    content:"";
-    position: absolute;
-    height: 2px;
-    width: 220px;
-    /* border: 1px solid #4E6F40; */
-    box-shadow: inset 0px 0px 3px 1px rgba(78, 111, 64, 0.33);
-    background-color: rgba(78, 111, 64, 0.77);
-    top:10px;
-    left: 377px;
 }
 
 .content li{
@@ -70,17 +62,6 @@
     margin-bottom: 80px;
 }
 
-
-.private{
-    width: 50%;
-    background: rgba(202, 148, 41, 0.082);
-    border-right: 5px solid #4E6F40;
-}
-.public{
-    width: 50%;
-    background: rgba(78, 111, 64, 0.096);
-    box-shadow: inset 0px 0px 3px 1px rgba(78, 111, 64, 0.33);
-}
 
 /* google_map */
 .googlemap h2{

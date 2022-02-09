@@ -12,12 +12,14 @@ header ul{
     width: 342px;
     position: absolute;
     z-index: 1;
-    left: -10px;
-    top: 20px;
+    /* left: -10px;
+    top: 20px; */
+    left: 0px;
+    top: -10px;
     padding: 30px 20px;
-    border: 3px solid rgba(202, 148, 41, 0.68);
-    border-radius: 18px;
-    box-shadow: inset 0px 0px 3px 1px rgba(202,148,41,.68);
+    /* border: 3px solid rgba(202, 148, 41, 0.68); */
+    /* border-radius: 18px; */
+    /* box-shadow: inset 0px 0px 3px 1px rgba(202,148,41,.68); */
     animation: biglogo 1s cubic-bezier(0,.39,.22,1.39) forwards;
 }
 
@@ -29,7 +31,8 @@ header ul{
 .big_logo a:hover{
     display: block;
     color: #fff;
-    transform: translateY(-6px);
+    /* transform: translateY(-6px); */
+    opacity: 0.5;
 }
 
 /* banner */
