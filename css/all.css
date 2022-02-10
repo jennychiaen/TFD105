@@ -8,10 +8,6 @@
     /* border: 1px solid green; */
 }
 
-.outter{
-    overflow: hidden;
-    max-width: 100%;
-}
 body{
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
@@ -53,9 +49,6 @@ p{
     left: 0;
     top:0;
     background-color:whitesmoke ;
-    /* border: 1px solid gray; */
-    /* box-sizing: border-box; */
-    /* margin: 0 auto; */
     z-index: 1;
     padding: 20px;
    
@@ -116,47 +109,16 @@ header li a{
     display: block;
  }
 
-/* header a:after{
-    content: '';
-    width: 0%;
-    height: 1px;
-    background-color: #000;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: all .3s linear;
-}
-header a:hover::after{
-    width: 100%;
-} */
-/* header li a:hover{
-    
-    color: white;
-    background-color: #4E6F40;
-    border-radius: 35px;
-    display: block;
-    width: 120PX;
-    line-height: 40PX;
-    height: 40PX;
-    text-align: center;
-    box-shadow:1px 1px 8px rgba(78, 111, 64, 0.55);
-
-} */
-/*  header li:after{
-    content: '';
-    width: 0%;
-    height: 1px;
-    background-color: #000;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: all .3s linear;
-}
-.shape-ex1:hover::after{
-    width: 100%;
-} */
-
-
+@media (min-width: 576px) and (max-width: 767.98px){
+    .header{
+    width:100%;
+    }
+    }
+@media (max-width:575.98px){
+    .header{
+    width:100%;
+    }
+    }
 
 /* footer */
 .footer{
@@ -178,3 +140,14 @@ header a:hover::after{
 .address, .phone{
     font-size: 14px;
 }
+
+@media (min-width: 576px) and (max-width: 767.98px){
+    .footer{
+    width:100%;
+    }
+    }
+@media (max-width:575.98px){
+    .footer{
+    width:100%;
+    }
+    }
