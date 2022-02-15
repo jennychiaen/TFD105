@@ -74,7 +74,10 @@ span{
 }
 
 .content li{
-    list-style-type:disc;}
+    list-style-type:disc;
+    font-size: 14px;
+    color: gray;
+}
 
 .content h4{
     margin-bottom: 10px;
@@ -95,7 +98,7 @@ td{
     text-align: center;
     padding: 5px 0;
 }
-main > ul{
-    margin-top: 20px;
-    font-size: 12px;
+.content > ul{
+    margin-top: 30px;
+
 }

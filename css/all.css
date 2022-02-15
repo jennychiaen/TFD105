@@ -45,7 +45,7 @@ p{
 .logo{
     display: block;
     width: 140px;
-    height: 80px;
+    height: 60px;
     left: 0;
     top:0;
     background-color:whitesmoke ;
@@ -71,7 +71,7 @@ header{
     display: flex;
     height: 100px;
     align-items: center;
-    margin: 10px 0;
+    /* margin: 10px 0; */
     text-align: center;
 }
 header ul{
@@ -109,14 +109,29 @@ header li a{
     display: block;
  }
 
+@media screen and (max-width:1200){
+ .wrapper{
+     width: 100%;
+ }
+}
+
 @media (min-width: 576px) and (max-width: 767.98px){
     .header{
-    width:100%;
+    /* width:100%; */
+    display: none;
     }
+    header ul{
+        display: none;
+    }
+
     }
 @media (max-width:575.98px){
     .header{
-    width:100%;
+    /* width:100%; */
+    display: none;
+    }
+    header ul{
+        display: none;
     }
     }
 

@@ -34,6 +34,52 @@ header ul{
     /* transform: translateY(-6px); */
     opacity: 0.5;
 }
+@media (min-width:768px) and (max-width:1200px){
+    .big_logo{
+        display: block;
+        width: 140px;
+        height: 60px;
+        left: 0;
+        top:0;
+        background-color:whitesmoke ;
+        z-index: 1;
+        padding: 20px;}
+   
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px){
+    .big_logo{
+    display: block;
+    width: 140px;
+    height: 60px;
+    left: 0;
+    top:0;
+    background-color:whitesmoke ;
+    z-index: 1;
+    padding: 20px;
+    }
+    header ul{
+        display: none;
+    }
+
+    }
+@media (max-width:575.98px){
+    .big_logo{
+        display: block;
+        width: 140px;
+        height: 60px;
+        left: 0;
+        top:0;
+        background-color:whitesmoke ;
+        z-index: 1;
+        padding: 20px;
+    }
+    header ul{
+        display: none;
+    }
+
+    }
 
 /* banner */
 .banner{
@@ -54,7 +100,54 @@ header ul{
     100%{ left: 666px; opacity: 1;}
 }
 
+@media screen and (max-width:1120px){
+    .banner{
+        width: 100%;
+    }
+}
+@media (min-width:800px ) and (max-width:1120px) {
+    .slogan{
+        position: absolute;
+        left: 539px;
+        top: 305px;
+        animation: 0;
+        width: 50%;
+    }
+}
+@media (min-width:800px ) and (max-width:992px) {
+    .slogan{
+        position: absolute;
+        left: 472px;
+        top: 292px;
+        animation: 0;
+        width: 50%;
+    }
+}
+
+@media (min-width:500px ) and (max-width:800px) {
+    .slogan{
+        position: absolute;
+        left: 359px;
+        top: 253px;
+        animation: 0;
+        width: 50%;
+    }
+}
+
+
+@media (max-width:499.98px){
+    .slogan{
+        position: absolute;
+        left: 210px;
+        top: 155px;
+        animation: 0;
+        width: 50%;
+
+    }
+}
+
 /* main */
+/* 帳篷旅館 圓圖 */
 main{
     margin: 0 auto;
     position: relative;
@@ -76,6 +169,42 @@ main{
     display: flex;
     justify-content:space-between;
 }
+
+@media (min-width: 576px) and (max-width: 767.98px){
+    .camps_photos{
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 50px;
+        justify-content: space-around;
+    } 
+    .camps_photos img{
+        margin-bottom: 64px; 
+        width: 200px;
+    }
+}
+
+
+@media (max-width:575.98px){
+
+    .camps_photos{
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 50px;
+    } 
+    .camps_photos img{
+        margin-bottom: 20px;
+        width: 180px;
+    
+
+    }
+}
+
+
+
+/* 關於 */
 .about:before{
     content:"";
     display:block;
@@ -115,6 +244,27 @@ main{
     width:100%;
 }
 
+@media screen and (max-width: 767.98px){
+    .about_cont{
+        flex-wrap: wrap;
+    }
+    .about_img, .about_mountain_view {
+    width: 100%;
+    object-fit: cover; }
+    .about_mountain_view{ 
+    margin:0 ;
+    }
+
+}
+
+@media (max-width:575.98px){}
+
+
+
+
+
+
+/* instagram */
 .instagram{
     color:#4E6F40 ;
     margin-top: 60px;
