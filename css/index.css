@@ -74,6 +74,7 @@ header ul{
         background-color:whitesmoke ;
         z-index: 1;
         padding: 20px;
+        
     }
     header ul{
         display: none;
@@ -112,6 +113,7 @@ header ul{
         top: 305px;
         animation: 0;
         width: 50%;
+        
     }
 }
 @media (min-width:800px ) and (max-width:992px) {
@@ -170,16 +172,33 @@ main{
     justify-content:space-between;
 }
 
+@media (min-width:768px ) and (max-width:1090px) {
+    .camps_photos{
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 50px;
+        justify-content: space-between;
+        
+    } 
+    .camps_photos img{
+        margin-bottom: 20px; 
+        width: 200px;
+    }
+}
+ 
+
 @media (min-width: 576px) and (max-width: 767.98px){
     .camps_photos{
         margin-bottom: 20px;
         display: flex;
         flex-wrap: wrap;
         margin: 50px;
-        justify-content: space-around;
+        justify-content: space-between;
+        
     } 
     .camps_photos img{
-        margin-bottom: 64px; 
+        margin-bottom: 20px; 
         width: 200px;
     }
 }
@@ -193,6 +212,8 @@ main{
         flex-wrap: wrap;
         justify-content: center;
         margin: 50px;
+        flex-direction: column;
+        align-content: center;
     } 
     .camps_photos img{
         margin-bottom: 20px;
@@ -245,6 +266,7 @@ main{
 }
 
 @media screen and (max-width: 767.98px){
+    
     .about_cont{
         flex-wrap: wrap;
     }
@@ -252,15 +274,11 @@ main{
     width: 100%;
     object-fit: cover; }
     .about_mountain_view{ 
-    margin:0 ;
+    margin:20px 0 0 0 ;
+    
     }
 
 }
-
-@media (max-width:575.98px){}
-
-
-
 
 
 
@@ -281,3 +299,7 @@ main{
 h2{
     font-weight: bold;
 }
+
+@media (min-width: 576px) and (max-width: 767.98px){}
+
+@media (max-width:575.98px){
