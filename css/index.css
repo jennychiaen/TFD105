@@ -86,67 +86,35 @@ header ul{
 .banner{
     margin: 0 auto;
     text-align: center;
+    position: relative;
 }
 
 .slogan{
     position: absolute;
     width:512px;
-    left: 666px;
-    top: 375px;
+    right: 0px;
+    bottom: 0px;
     animation: slogan 1.1s .3s cubic-bezier(0,.39,.22,1.39) forwards;
+
+
+
 }
 
 @keyframes slogan{
-    0%{ left:1226px; opacity: 0; }
-    100%{ left: 666px; opacity: 1;}
+    0%{ transform: translateX(100%); opacity: 0; }
+    100%{transform: translateX(0%); opacity: 1;}
 }
 
-@media screen and (max-width:1120px){
-    .banner{
-        width: 100%;
-    }
-}
-@media (min-width:800px ) and (max-width:1120px) {
+
+@media  (max-width:1120px) {
     .slogan{
-        position: absolute;
-        left: 539px;
-        top: 305px;
-        animation: 0;
+
         width: 50%;
         
     }
 }
-@media (min-width:800px ) and (max-width:992px) {
-    .slogan{
-        position: absolute;
-        left: 472px;
-        top: 292px;
-        animation: 0;
-        width: 50%;
-    }
-}
-
-@media (min-width:500px ) and (max-width:800px) {
-    .slogan{
-        position: absolute;
-        left: 359px;
-        top: 253px;
-        animation: 0;
-        width: 50%;
-    }
-}
 
 
-@media (max-width:499.98px){
-    .slogan{
-        position: absolute;
-        left: 210px;
-        top: 155px;
-        animation: 0;
-        width: 50%;
-
-    }
-}
 
 /* main */
 /* 帳篷旅館 圓圖 */
