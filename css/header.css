@@ -39,6 +39,7 @@ h5{
 p{
     font-size: 12px;
 }
+
 /* ================ icon  ==================== */
 #nav-icon1,#nav-icon2 {
     display: none;
@@ -103,32 +104,35 @@ p{
     display: block;
 }
 
-
-* {
+}
+/* * {
     margin: 0;
     padding: 0;
-  }
+  } */
 header{
     display: flex;
     height: 100px;
     position: fixed;
     z-index: 30;
     background-color: white;
+    /* align-items: center; */
+    text-align: center;
+    line-height: 40px;
     width: 100%;
     /* margin: auto; */
-    /* justify-content: space-between; */
+    justify-content: space-between;
 }
 
 .nav_list{
     display: flex;
     margin-left: auto;
-    width: 750px;
+    width: calc(100vh- 80px);
     color: black;
-    text-align: center;
 }
 .nav_list li{
     flex-grow: 1;
     line-height: 100px;
+    height: 80px;
     
 }
 
@@ -136,29 +140,34 @@ header{
     color:black;
     text-decoration: none;
     font-size: 16px;
-    line-height: 40PX;
     width: 120PX;
-    height: 40PX;
-    display: block;
+    line-height: 100px;
+    display: flex;
     text-align: center; 
-    border-bottom:3px solid transparent;
+   
+
+    /* border-bottom:3px solid transparent; */
+
 }
 .nav_list li a:hover{
     color: #4E6f40;
     font-weight: bold;
     border-bottom: 3px solid #4E6f40; 
-    /* width: 120PX;
-    height: 40PX;
-    line-height: 40PX; */
+    width: 120PX;
+    height: 80PX; 
     display: block;
 }
- 
 
+
+/* jquery 會預設display:none */
 @media screen and (min-width: 100px){
-    .nav_list, .nav_list li, .nav_list li a{
-      display:block !important;
+    .nav_list {
+      display:flex !important;
     }
 } 
+
+
+
 @media screen and (max-width: 767.98px) {
 header{
     height: 60px;
@@ -179,7 +188,10 @@ nav.main_nav {
     text-align: right;
     z-index: 50;
 }
-    
+
+.nav_list{
+    flex-direction: column;
+}
 }
 
 
