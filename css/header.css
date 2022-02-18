@@ -115,12 +115,11 @@ header{
     position: fixed;
     z-index: 30;
     background-color: white;
-    /* align-items: center; */
     text-align: center;
-    line-height: 40px;
     width: 100%;
     /* margin: auto; */
     justify-content: space-between;
+    box-shadow: -1px 0px 10px rgb(0 0 0 / 20%);
 }
 
 .nav_list{
@@ -131,9 +130,6 @@ header{
 }
 .nav_list li{
     flex-grow: 1;
-    line-height: 100px;
-    height: 80px;
-    
 }
 
 .nav_list li a{
@@ -141,9 +137,11 @@ header{
     text-decoration: none;
     font-size: 16px;
     width: 120PX;
+    height: 100px;
     line-height: 100px;
-    display: flex;
+    display: block;
     text-align: center; 
+    
    
 
     /* border-bottom:3px solid transparent; */
@@ -167,7 +165,7 @@ header{
 } 
 
 
-
+/* 漢堡選單滑入 */
 @media screen and (max-width: 767.98px) {
 header{
     height: 60px;
@@ -191,7 +189,20 @@ nav.main_nav {
 
 .nav_list{
     flex-direction: column;
+    /* border: 1px solid red; */
+    align-items: center;
+    
 }
+
+.nav_list li  {
+
+    /* border: 1px solid saddlebrown; */
+}
+.nav_list li  a{
+    /* border: 1px solid green; */
+  
+
+
 }
 
 
