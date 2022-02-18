@@ -39,17 +39,23 @@ h5{
 p{
     font-size: 12px;
 }
+/* ================ icon  ==================== */
+#nav-icon1,#nav-icon2 {
+    display: none;
+}
 
-/* ================ header new ==================== */
+@media (max-width:767.98px){
+    #nav-icon1,#nav-icon2 {
+    display: block;
+    height: 10px;
+    font-size: 25px;
+    
+
+}
 
 
-
-
-
-
-
-
-/* ================ header new  ==================== */
+}
+/* ================ header  ==================== */
 .logo{
     display: block;
     width: 140px;
@@ -77,46 +83,56 @@ p{
 }
 
 @media screen and (max-width: 767.98px) {
-    .logo{
-        display: block;
-        width: 60px;
-        height: 20px;
-        left: 0;
-        top:0;
-        background-color:whitesmoke ;
-        z-index: 1;
-    }
-    .logo a{
-        display: block;
-        width: 60px;
-        height: 20px;
-        
-    }
-    .logo a:hover{
-        /* transform: scale(1.2); */
-        opacity: 0.5;
-        display: block;
-    
-    }
+.logo{
+    display: block;
+    width: 60px;
+    height: 20px;
+    left: 0;
+    top:0;
+    background-color:whitesmoke ;
+    z-index: 1;
+}
+.logo a{
+    display: block;
+    width: 60px;
+    height: 20px;
+}
+.logo a:hover{
+    /* transform: scale(1.2); */
+    opacity: 0.5;
+    display: block;
 }
 
+
+* {
+    margin: 0;
+    padding: 0;
+  }
 header{
     display: flex;
     height: 100px;
-    align-items: center;
-    text-align: center;
+    position: fixed;
+    z-index: 30;
+    background-color: white;
+    width: 100%;
+    /* margin: auto; */
+    /* justify-content: space-between; */
 }
-header ul{
+
+.nav_list{
     display: flex;
     margin-left: auto;
     width: 750px;
     color: black;
+    text-align: center;
 }
-header li{
+.nav_list li{
     flex-grow: 1;
+    line-height: 100px;
+    
 }
 
-header li a{
+.nav_list li a{
     color:black;
     text-decoration: none;
     font-size: 16px;
@@ -126,23 +142,50 @@ header li a{
     display: block;
     text-align: center; 
     border-bottom:3px solid transparent;
-
 }
-
- header li a:hover{
+.nav_list li a:hover{
     color: #4E6f40;
     font-weight: bold;
-    border-bottom: 3px solid #4E6f40; */
+    border-bottom: 3px solid #4E6f40; 
     /* width: 120PX;
     height: 40PX;
     line-height: 40PX; */
-    display: block;}
+    display: block;
+}
  
 
+@media screen and (min-width: 100px){
+    .nav_list, .nav_list li, .nav_list li a{
+      display:block !important;
+    }
+} 
+@media screen and (max-width: 767.98px) {
+header{
+    height: 60px;
+    justify-content: space-between;
+}
+nav.main_nav {
+    display: block;
+    position: fixed;
+    width: 35%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    opacity: 1;
+    background-color: #ffffff;
+    box-shadow: -1px 0px 10px rgb(0 0 0 / 20%);
+    border-radius: 100% 0 0 100%;
+    cursor: default;
+    text-align: right;
+    z-index: 50;
+}
+    
+}
 
 
-
-
+  
+  
+  
 /* ================ footer ==================== */
 
 .footer{
