@@ -21,18 +21,22 @@
     <div id="nav-icon1">
       <i class="fa-solid fa-bars"></i>
     </div>
+    
     <nav class="main_nav">
       <div id="nav-icon2">
-        <i class="fa-solid fa-xmark"></i></div>
-        <ul class="nav_list">
-          <li><a href="./news.html">最新消息</a></li>
-          <li><a href="./camps.html">帳篷旅館</a></li>
-          <li><a href="./activities.html">營區活動</a></li>
-          <li><a href="./diving.html">美食饗宴</a></li>
-          <li><a href="./reservation.html">線上預約</a></li>
-          <li><a href="./location.html">交通指南</a></li>
-        </ul>
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+
+      <ul class="nav_list">
+        <li><a href="./news.html">最新消息</a></li>
+        <li><a href="./camps.html">帳篷旅館</a></li>
+        <li><a href="./activities.html">營區活動</a></li>
+        <li><a href="./diving.html">美食饗宴</a></li>
+        <li><a href="./reservation.html">線上預約</a></li>
+        <li><a href="./location.html">交通指南</a></li>
+      </ul>
     </nav>
+  
   </header>
   <div class="wrapper">
     <main>
@@ -119,16 +123,16 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
-     
+
     $("#nav-icon1").click(function () {
       $(this).toggleClass("open");
     });
-    
+
     // 點擊按鈕選單縮放
     $("#nav-icon1,#nav-icon2").on("click", function () {
       $("nav.main_nav").slideToggle();
     });
- 
+
   </script>
 </body>
 

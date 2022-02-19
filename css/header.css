@@ -82,33 +82,6 @@ p{
     display: block;
 
 }
-
-@media screen and (max-width: 767.98px) {
-.logo{
-    display: block;
-    width: 60px;
-    height: 20px;
-    left: 0;
-    top:0;
-    background-color:whitesmoke ;
-    z-index: 1;
-}
-.logo a{
-    display: block;
-    width: 60px;
-    height: 20px;
-}
-.logo a:hover{
-    /* transform: scale(1.2); */
-    opacity: 0.5;
-    display: block;
-}
-
-}
-/* * {
-    margin: 0;
-    padding: 0;
-  } */
 header{
     display: flex;
     height: 100px;
@@ -122,12 +95,15 @@ header{
     box-shadow: -1px 0px 10px rgb(0 0 0 / 20%);
 }
 
+
 .nav_list{
+    
     display: flex;
     margin-left: auto;
     width: calc(100vh- 80px);
     color: black;
 }
+
 .nav_list li{
     flex-grow: 1;
 }
@@ -150,38 +126,85 @@ header{
 .nav_list li a:hover{
     color: #4E6f40;
     font-weight: bold;
-    border-bottom: 3px solid #4E6f40; 
+    border-bottom: 1px solid #4E6f40; 
     width: 120PX;
-    height: 80PX; 
+    /* height: 80PX;  */
     display: block;
 }
 
 
-/* jquery 會預設display:none */
-@media screen and (min-width: 100px){
-    .nav_list {
-      display:flex !important;
-    }
-} 
 
+@media screen and (max-width: 767.98px) {
+.logo{
+    display: block;
+    width: 60px;
+    height: 20px;
+    left: 0;
+    top:0;
+    background-color:whitesmoke ;
+    z-index: 1;
+}
+.logo a{
+    display: block;
+    width: 60px;
+    height: 20px;
+}
+.logo a:hover{
+    /* transform: scale(1.2); */
+    opacity: 0.5;
+    display: block;
+}
+
+header{
+    display: flex;
+    height: 60px;
+    position: fixed;
+    z-index: 30;
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    /* margin: auto; */
+    justify-content: space-between;
+    box-shadow: -1px 0px 10px rgb(0 0 0 / 20%);
+}
+
+}
+/* * {
+    margin: 0;
+    padding: 0;
+  } */
+
+
+
+
+
+/* jquery 會預設display:none */
+@media screen and (min-width: 767.98px){
+    nav.main_nav {
+        display: block !important;
+    }
+    
+}
 
 /* 漢堡選單滑入 */
 @media screen and (max-width: 767.98px) {
 header{
     height: 60px;
     justify-content: space-between;
+    
 }
+
 nav.main_nav {
-    display: block;
+    display: none;
     position: fixed;
-    width: 35%;
+    width: 40%;
     height: 100%;
     top: 0;
     right: 0;
     opacity: 1;
     background-color: #ffffff;
     box-shadow: -1px 0px 10px rgb(0 0 0 / 20%);
-    border-radius: 100% 0 0 100%;
+    border-radius: 80% 0 0 80%;
     cursor: default;
     text-align: right;
     z-index: 50;
