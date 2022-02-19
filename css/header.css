@@ -45,15 +45,22 @@ p{
     display: none;
 }
 
-@media (max-width:767.98px){
+@media (max-width:901.98px){
     #nav-icon1,#nav-icon2 {
     display: block;
     height: 10px;
     font-size: 25px;
     
-
+   
+   
 }
-
+.fa-solid {
+    color: #4E6f40;
+    padding:10px;
+    padding-top: 20px;
+  
+}
+    
 
 }
 /* ================ header  ==================== */
@@ -106,6 +113,7 @@ header{
 
 .nav_list li{
     flex-grow: 1;
+    
 }
 
 .nav_list li a{
@@ -126,15 +134,15 @@ header{
 .nav_list li a:hover{
     color: #4E6f40;
     font-weight: bold;
-    border-bottom: 1px solid #4E6f40; 
+    border-bottom: 3px solid #4E6f40; 
     width: 120PX;
-    /* height: 80PX;  */
+    height: 80PX; 
     display: block;
 }
 
 
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 901.98px) {
 .logo{
     display: block;
     width: 60px;
@@ -169,17 +177,13 @@ header{
 }
 
 }
-/* * {
-    margin: 0;
-    padding: 0;
-  } */
 
 
 
 
 
 /* jquery 會預設display:none */
-@media screen and (min-width: 767.98px){
+@media screen and (min-width: 902px){
     nav.main_nav {
         display: block !important;
     }
@@ -187,7 +191,7 @@ header{
 }
 
 /* 漢堡選單滑入 */
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 901.98px) {
 header{
     height: 60px;
     justify-content: space-between;
@@ -218,16 +222,25 @@ nav.main_nav {
 }
 
 .nav_list li  {
-
+    height: 60PX; 
+    text-align: center;
     /* border: 1px solid saddlebrown; */
 }
 .nav_list li  a{
     /* border: 1px solid green; */
-  
-
-
+    height: 60PX; 
 }
 
+.nav_list li a:hover{
+    color: #4E6f40;
+    font-weight: bold;
+    border-bottom: 3px solid #4E6f40; 
+    width: 120PX;
+    height: 60PX; 
+    display: block;
+}
+
+}
 
   
   
