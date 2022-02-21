@@ -1,7 +1,8 @@
-@import url("all.css");
+@import url("all_.css");
 
 main{
     display: flex;
+    margin-top: 140px;
 }
 /* photoside */
 .photoside{

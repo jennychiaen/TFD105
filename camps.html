@@ -5,8 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
+  integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/camps.css">
   <title>Camps</title>
 </head>
@@ -15,14 +17,22 @@
 
   <header>
     <div class="logo"><a href="./index.html"><img src="./img/logo.svg"></a></div>
-    <ul>
-      <li><a href="./news.html">最新消息</a></li>
-      <li><a href="./camps.html">帳篷旅館</a></li>
-      <li><a href="./activities.html">營區活動</a></li>
-      <li><a href="./diving.html">美食饗宴</a></li>
-      <li><a href="./reservation.html">線上預約</a></li>
-      <li><a href="./location.html">交通指南</a></li>
-    </ul>
+    <div id="nav-icon1">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <nav class="main_nav">
+      <div id="nav-icon2">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <ul class="nav_list">
+        <li><a href="./news.html">最新消息</a></li>
+        <li><a href="./camps.html">帳篷旅館</a></li>
+        <li><a href="./activities.html">營區活動</a></li>
+        <li><a href="./diving.html">美食饗宴</a></li>
+        <li><a href="./reservation.html">線上預約</a></li>
+        <li><a href="./location.html">交通指南</a></li>
+      </ul>
+    </nav>
   </header>
   <div class="wrapper">
     <main>
@@ -108,6 +118,19 @@
       </p>
     </div>
   </footer>
+  <script>
+  
+    //點擊icon
+     $("#nav-icon1").click(function () {
+       $(this).toggleClass("open");
+     });
+ 
+     // 點擊按鈕選單縮放
+     $("#nav-icon1,#nav-icon2").on("click", function () {
+       $("nav.main_nav").slideToggle();
+     });
+ 
+   </script>
 </body>
 
 </html>

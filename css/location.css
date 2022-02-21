@@ -1,9 +1,9 @@
-@import url("all.css");
+@import url("all_.css");
 
 /* banner */
 .banner{
     position: relative;
-
+    margin-top: 100px;
 }
 .banner img{
     display: block;

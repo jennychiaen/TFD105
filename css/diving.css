@@ -1,4 +1,4 @@
-@import url("all.css");
+@import url("all_.css");
 
 
 main{
@@ -9,6 +9,7 @@ main{
     display: block;
     margin: 0 auto;
     margin-bottom: 100px;
+    margin-top: 140px;
 }
 
 
