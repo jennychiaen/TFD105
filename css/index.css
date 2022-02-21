@@ -234,9 +234,18 @@ main{
     }
 }
 
-@media (max-width: 800px){
+@media  (min-width: 600px) and (max-width:800px){
     .instagram{
         width: 500px;
+    }
+}
+
+@media  screen and (max-width:600px){
+    .instagram img {
+        width:80%;
+    }
+    .instagram{
+        width: 300px;
     }
 }
 
