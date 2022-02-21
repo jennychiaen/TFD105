@@ -4,11 +4,13 @@ main{
     display: flex;
     margin-top: 140px;
 }
+
+
 /* photoside */
-.photoside{
+/* .photoside{
     width: 50%;
-}
-.camp_description{
+} */
+/* .camp_description{
     width: 50%;
 }
 .bigphoto{
@@ -28,7 +30,7 @@ main{
 }
 .smallphotos img{
     margin-left: 10px;
-}
+} */
 
 /* description-icon*/
 
