@@ -269,24 +269,3 @@ nav.main_nav {
     font-size: 14px;
 }
 
-@media (min-width: 680px) and (max-width: 901px){
-    .footer{
-   
-    
-    }
-}
-@media (max-width:680px){
-    .cards{
-        border: 1px solid saddlebrown;
-    
-    }
-    .footer{
-  
-  
-    
-   
-    }
-    .social_list{
-        
-    }
-}
