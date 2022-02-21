@@ -120,6 +120,22 @@
             slidesToScroll: 4,
             dots: true,
             arrows: true,
+            responsive: [
+          {
+              breakpoint: 1160, // RWD在1024寬度時切換顯示數量
+              settings: {
+                  slidesToShow: 3, //一次顯示3個
+                  slidesToScroll: 3,//切換下一頁時移動3個
+             }
+         },{
+              breakpoint: 800,// RWD在600寬度時切換顯示數量
+              settings: {
+                  slidesToShow: 2,//一次顯示2個
+                  slidesToScroll: 2,//切換下一頁時移動2個
+             }
+         },
+         
+        ]
         });
 
     </script>
