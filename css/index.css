@@ -161,6 +161,9 @@ main{
 .about{
    margin-bottom: 50px;
 }
+.about_mountain_view h2{
+    font-weight: bold;
+}
 .about_cont{
     display: flex;
 }
@@ -210,19 +213,19 @@ main{
 /* instagram */
 .instagram{
     color:#4E6F40 ;
-    margin-top: 60px;
     text-align: center;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 60px;
 }
 
-.insta_photos{
-    display: flex;
-    margin-top: 20px;
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-}
-h2{
+.instagram h2{
+    margin-bottom: 10px;
     font-weight: bold;
+}
+.slick-prev:before,
+.slick-next:before {
+      color:#4E6F40
 }
 
 @media (min-width: 576px) and (max-width: 767.98px){}
