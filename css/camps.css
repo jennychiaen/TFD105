@@ -1,18 +1,42 @@
 @import url("all_.css");
 
 main{
-    display: flex;
-    margin-top: 140px;
+    width:1200px;
+    margin:0 auto;
+    margin-top: 130px;
+}
+
+.photoside{
+    display:block;
+   
+    float: left;
+    
+}
+
+.photoside img{
+    margin: 10px;
+    padding: 2%;
 }
 
 
-/* photoside */
-/* .photoside{
+
+.photoside{
     width: 50%;
-} */
-/* .camp_description{
+    padding: 0 80px;
+    box-sizing: border-box;
+} 
+.camp_description{
+    float: right;
     width: 50%;
 }
+
+.slick-prev:before,
+.slick-next:before {
+      color:#4E6F40
+}
+
+/* photoside  沒加輪播的*/
+/*
 .bigphoto{
  display: flex;
  align-items: center;
@@ -31,6 +55,9 @@ main{
 .smallphotos img{
     margin-left: 10px;
 } */
+
+
+
 
 /* description-icon*/
 
