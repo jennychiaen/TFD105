@@ -16,6 +16,7 @@ main{
 .photoside img{
     margin: 10px;
     padding: 2%;
+    height: 300px;
 }
 
 
@@ -32,9 +33,30 @@ main{
 
 .slick-prev:before,
 .slick-next:before {
-      color:#4E6F40
+      color:#4E6F40;
+     
+}
+.slick-prev:before{
+    
+padding-right: 10px;
 }
 
+.slick-next:before{
+padding-left: 10px;
+
+}
+
+.slick-slide{
+    margin-left:  10px;
+    margin-right:  10px;
+    text-align:center;
+  }
+
+  .slick-list {
+    margin-left: -10px;
+    margin-right: -10px;
+    
+  }
 /* photoside  沒加輪播的*/
 /*
 .bigphoto{
