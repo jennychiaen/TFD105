@@ -102,11 +102,10 @@ h3{
     font-weight: bold;
 }
 
-@media (min-width: 576px) and (max-width: 767.98px){
-    .card:nth-child(2n)::after {
-       
-        
-    }
+@media (min-width: 576px) and (max-width: 1120px){
+   .cards{
+       width: 90%;
+   }
 
 }
 
