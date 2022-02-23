@@ -9,13 +9,14 @@ main{
 .photoside{
     display:block;
     float: left;
+    margin-top: 30px;
     
 }
 
 .photoside img{
     margin: 10px;
     padding: 2%;
-    height: 300px;
+    
 }
 
 
@@ -25,6 +26,7 @@ main{
     padding: 0 80px;
     box-sizing: border-box;
 } 
+
 .camp_description{
     float: right;
     width: 50%;
@@ -35,9 +37,9 @@ main{
       color:#4E6F40;
      
 }
-.slick-prev:before{
-    
-padding-right: 10px;
+.slick-prev{
+   left:-48px; 
+/* padding-right: 10px; */
 }
 
 .slick-next:before{
@@ -48,12 +50,18 @@ padding-left: 10px;
 .slick-slide{
     margin-left:  10px;
     margin-right:  10px;
+    
     text-align:center;
   }
 
+.big_photo {
+    height: 300px;
+    margin: 0 auto;
+}
   .slick-list {
     margin-left: -10px;
     margin-right: -10px;
+   
     
   }
 /* photoside  沒加輪播的*/
