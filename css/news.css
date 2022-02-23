@@ -8,6 +8,9 @@
 .banner img{
     display: block;
 }
+.banner img:first-child{
+    margin: 0 auto;
+}
 .tag_news{
     width: 324px;
     position: absolute;

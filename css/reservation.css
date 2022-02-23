@@ -8,6 +8,10 @@
 .banner img{
     display: block;
 }
+
+.banner img:first-child{
+    margin: 0 auto;
+}
 .tag_reservation{
     width: 324px;
     position: absolute;
