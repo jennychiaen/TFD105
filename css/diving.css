@@ -203,7 +203,25 @@ h3{
     }
     .all_photos > .rightside{
         /* flex-wrap: wrap; */
-        display: block;
+        /* display: block; */
         width: 100%;
+        margin: 0 auto;
+    }
+    
+    .all_photos > .leftside {
+        width: 100%;
+    }
+    .all_photos > .rightside{
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:464px){
+    .all_photos > .rightside img{
+        /* width: 60%; */
+        /* justify-content: center; */
+        width: 100px;
+        padding-left: 10px;
     }
 }
