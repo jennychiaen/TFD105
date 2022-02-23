@@ -36,15 +36,20 @@
     display: flex;
     margin-top: 30px;
 }
+
 .transport_private{
+    margin-top: 10px;
     width: 50%;
     border-right:5px #4E6F40 dashed;
 }
 .transport_public{
     width: 50%;
 }
+.private{
+    padding-top: 20px;
+}
 .content img {
-    width: 20%;
+    width: 25%;
     display: block;
     margin: 0 auto;
     /* border: 4px solid #4E6F40; */
@@ -67,7 +72,7 @@
 }
 .content ul{
     margin-left: 80px;
-    margin-bottom: 80px;
+    
 }
 
 

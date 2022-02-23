@@ -105,6 +105,7 @@ h1{
     border-radius: 15px;
     opacity: .6;
     vertical-align: text-top;
+    resize: none;
 }
 .check_text{
      margin-left:5px;
