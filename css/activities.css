@@ -73,7 +73,7 @@ h2{
 }
 
 .card:nth-child(2n)::after {
-    left: -68px;
+    left: -11.52%;
     box-sizing: border-box;
     
 }
@@ -100,4 +100,38 @@ h2{
 h3{
     color: #4e6f40;
     font-weight: bold;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+    .card:nth-child(2n)::after {
+       
+        
+    }
+
+}
+
+@media (max-width:575.98px){
+  /* 中線，圓圈皆消失 */
+    .cards::after{
+        display: none;
+    }
+
+    .card::after{
+        display: none;
+    }
+    .card:nth-child(2n)::after {
+        display: none;
+    }
+   /* card 部分 */
+    .card:nth-child(2n){
+        left:0px;
+    }
+    
+    .card{
+        /* left: 0;
+        right: 0;
+        margin: auto; */
+        margin: 0 auto;
+    }
+
 }
