@@ -14,27 +14,6 @@ main{
 } 
 
 }
-/* img{
-    max-width: 100%;
-} */
-/* main{
-    width:90%;
-} */
-
-/* @media screen and (max-width: 991.98px){
-   main{
-       width:80%;
-   }
-   img{
-       max-width: 100%;
-   }
-   .banner img{
-    max-width: 100%;
-} */
-
-/* } */
-
-
 
 
 /* banner */
@@ -202,8 +181,6 @@ h3{
         display: none;
     }
     .all_photos > .rightside{
-        /* flex-wrap: wrap; */
-        /* display: block; */
         width: 100%;
         margin: 0 auto;
     }
@@ -219,8 +196,6 @@ h3{
 }
 @media screen and (max-width:464px){
     .all_photos > .rightside img{
-        /* width: 60%; */
-        /* justify-content: center; */
         width: 100px;
         padding-left: 10px;
     }
