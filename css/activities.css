@@ -126,12 +126,21 @@ h3{
     .card:nth-child(2n){
         left:0px;
     }
-    
+    .cards{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
     .card{
         /* left: 0;
         right: 0;
         margin: auto; */
         margin: 0 auto;
+        width: 60%;
+        
     }
-
+    .checkin,.checkout{
+        width:40%;
+        
+    
+    }
 }
