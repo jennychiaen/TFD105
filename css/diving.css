@@ -176,6 +176,7 @@ h3{
     .all_photos{
         display: block;
     }
+    /* 第一、二張圖片不要出現 */
     .all_photos > .rightside img:first-child, 
     .all_photos > .rightside img:nth-child(2) {
         display: none;
@@ -196,7 +197,6 @@ h3{
 }
 @media screen and (max-width:464px){
     .all_photos > .rightside img{
-        width: 100px;
-        padding-left: 10px;
+     display: none;
     }
 }
