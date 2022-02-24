@@ -80,26 +80,6 @@ padding-left: 10px;
     height:300px;
     margin: 0 auto;
 }
-/* photoside  沒加輪播的*/
-/*
-.bigphoto{
- display: flex;
- align-items: center;
- justify-content: center;
-} 
-
-.fa-chevron-left , .fa-chevron-right{
-    color: #4E6F40;
-}
-
-.smallphotos{
-    margin-top: 38px;
-    display: flex;
-    justify-content: center;
-}
-.smallphotos img{
-    margin-left: 10px;
-} */
 
 
 

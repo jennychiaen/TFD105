@@ -9,6 +9,8 @@
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
   integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
   <link rel="stylesheet" href="./css/camps_2.css">
   <title>Camps_2</title>
 </head>
@@ -35,17 +37,21 @@
   </header>
   <div class="wrapper">
     <main>
+      <!-- 兩行輪播/套用兩個一樣的照片 -->
       <div class="photoside">
-        <div class="bigphoto">
-          <i class="fas fa-chevron-left"></i>
-          <img src="./img/camp2big.jpg">
-          <i class="fas fa-chevron-right"></i>
+        <div class="big_photo slider slider-for">
+          <div><img src="./img/campsmall_2-1.jpg"></div>
+          <div><img src="./img/campsmall_2-2.jpg"></div>
+          <div><img src="./img/campsmall_2-3.jpg"></div>
+          <div><img src="./img/campsmall_2-4.jpg"></div>
+          <div><img src="./img/campsmall_2-5.jpg"></div>
         </div>
-        <div class="smallphotos">
-          <img src="./img/campsmall2-1.jpg">
-          <img src="./img/campsmall2-2.jpg">
-          <img src="./img/campsmall2-3.jpg">
-          <img src="./img/campsmall2-4.jpg">
+        <div class="small_photo slider slider-nav">
+          <div><img src="./img/campsmall_2-1.jpg"></div>
+          <div><img src="./img/campsmall_2-2.jpg"></div>
+          <div><img src="./img/campsmall_2-3.jpg"></div>
+          <div><img src="./img/campsmall_2-4.jpg"></div>
+          <div><img src="./img/campsmall_2-5.jpg"></div>
         </div>
       </div>
       <div class="camp_description">
@@ -116,9 +122,11 @@
       </p>
     </div>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <script>
-  
-   //點擊icon
+
+    //點擊icon
     $("#nav-icon1").click(function () {
       $(this).toggleClass("open");
     });
@@ -127,6 +135,27 @@
     $("#nav-icon1,#nav-icon2").on("click", function () {
       $("nav.main_nav").slideToggle();
     });
+
+    //輪播效果
+   
+      $('.slider-for').slick({
+        slidesToShow: 1, //預設 1 幻燈片顯示幾張
+        slidesToScroll: 1,//預設 1 幻灯片每次滑動幾張
+        arrows: false, // 預設 true 左右箭頭是否顯示
+        fade: true, // 預設 false 淡入淡出
+        asNavFor: '.slider-nav',//將滑塊設置為其他滑塊的導航（類或ID名稱）,適用於多個輪播圖共用一個導航
+        // variableWidth: true
+      });
+
+      $('.slider-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        dots: true, // 預設 false 指示点
+        focusOnSelect: true, // 預設 false
+        // variableWidth: true
+      });
+
 
   </script>
 </body>
