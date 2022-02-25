@@ -1,66 +1,66 @@
 @import url("all_.css");
 
-main{
-    width:1200px;
-    margin:0 auto;
-    margin-top: 130px;
+main {
+    max-width: 1200px;
+    margin: 130px auto 0;
 }
 
-.photoside{
-    display:block;
+/* 左邊輪播照片,右邊敘述 */
+.photoside {
+    display: block;
     float: left;
     margin-top: 30px;
-    
+
 }
 
-.photoside img{
-    margin: 10px;
-    padding: 2%;
-    
-}
-
-
-
-.photoside{
-    width: 50%;
-    padding: 0 80px;
-    box-sizing: border-box;
-} 
-
-.camp_description{
+.camp_description {
     float: right;
     width: 50%;
 }
 
-.slick-prev:before,
+/* ===================== */
+.photoside img {
+    margin: 10px;
+    padding: 2%;
+
+}
+
+.photoside {
+    width: 50%;
+    padding: 0 80px;
+    box-sizing: border-box;
+}
+
+/* 輪播按鈕 */
+
+.slick-next:before,
+.slick-prev:before {
+    color: #4E6F40;
+
+}
+
+.slick-prev {
+    left: -48px;
+}
+
 .slick-next:before {
-      color:#4E6F40;
-     
-}
-.slick-prev{
-   left:-48px; 
-/* padding-right: 10px; */
-}
-
-.slick-next:before{
-padding-left: 10px;
+    padding-left: 10px;
 
 }
 
-.slick-slide{
-    margin-left:  10px;
-    margin-right:  10px;
-    text-align:center;
+.slick-slide {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
 }
 
-.slick-slide img{
+.slick-slide img {
     width: 80%;
-    height: 80%;
     object-fit: cover;
     margin: 0 auto;
 }
 
-.small_photo{
+.small_photo {
     margin-top: 100px;
 }
 
@@ -69,52 +69,50 @@ padding-left: 10px;
     margin: 0 auto;
     padding-bottom: 100px;
 }
-  .slick-list {
+
+.slick-list {
     margin-left: -10px;
     margin-right: -10px;
-   
-    
-  }
-  .slider-for{
-   
-    height:300px;
-    margin: 0 auto;
+
 }
 
+.slider-for {
 
-
+    height: 300px;
+    margin: 0 auto;
+}
 
 /* description-icon*/
 
-.bedicon{
+.bedicon {
     display: flex;
     justify-content: center;
-    
-} 
 
-.bedicon a{
+}
+
+.bedicon a {
     display: block;
     text-decoration: none;
     color: black;
 }
-.bedicon img{
+
+.bedicon img {
     display: block;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
 }
-.bedicon a:hover{
-    opacity:0.5;
+
+.bedicon a:hover {
+    opacity: 0.5;
     display: block;
     text-decoration: none;
     color: black;
 }
-.onebed{
+
+.onebed {
     margin-right: 30px;
 }
 
-
-
-span{
+span {
     display: block;
     width: 100%;
     height: 2px;
@@ -123,21 +121,23 @@ span{
 }
 
 /* description */
-.content h2{
+.content h2 {
     margin-bottom: 20px;
 }
 
-.content li{
-    list-style-type:disc;
+.content li {
+    list-style-type: disc;
     font-size: 14px;
     color: gray;
-   
+
 }
 
-.content h4{
+.content h4 {
     margin-bottom: 10px;
 }
-.content table{
+
+
+.content table {
     text-indent: initial;
     border-spacing: 2px;
     border-collapse: collapse;
@@ -146,14 +146,16 @@ span{
     table-layout: fixed;
     border: 1px solid #4E6F40;
 }
-td{
+
+td {
     border: 1.2px solid #4E6F40;
     font-size: 14px;
     font-weight: 500;
     text-align: center;
     padding: 5px 0;
 }
-.content > ul{
+
+.content > ul {
     margin-top: 30px;
 
 }

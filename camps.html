@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
     integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
@@ -38,6 +38,24 @@
   </header>
   <div class="wrapper">
     <main>
+      <div class="bedicon_forCellphone">
+       
+          <div class="bedicon_cellphone">
+            <div class="onebed">
+              <a href="./camps.html"><img src="./img/bed .jpg">
+                <h2>豪華兩人床</h2>
+              </a>
+
+            </div>
+            <div class="twobeds">
+              <a href="./camps_2.html"><img src="./img/two_bed .jpg">
+                <h2>豪華四人床</h2>
+              </a>
+
+            </div>
+          </div>
+        
+      </div>
       <!-- 兩行輪播/套用兩個一樣的照片 -->
       <div class="photoside">
         <div class="big_photo slider slider-for">
@@ -139,24 +157,24 @@
     });
 
     //輪播效果
-   
-      $('.slider-for').slick({
-        slidesToShow: 1, //預設 1 幻燈片顯示幾張
-        slidesToScroll: 1,//預設 1 幻灯片每次滑動幾張
-        arrows: false, // 預設 true 左右箭頭是否顯示
-        fade: true, // 預設 false 淡入淡出
-        asNavFor: '.slider-nav',//將滑塊設置為其他滑塊的導航（類或ID名稱）,適用於多個輪播圖共用一個導航
-        // variableWidth: true
-      });
 
-      $('.slider-nav').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        asNavFor: '.slider-for',
-        dots: true, // 預設 false 指示点
-        focusOnSelect: true, // 預設 false
-        // variableWidth: true
-      });
+    $('.slider-for').slick({
+      slidesToShow: 1, //預設 1 幻燈片顯示幾張
+      slidesToScroll: 1,//預設 1 幻灯片每次滑動幾張
+      arrows: false, // 預設 true 左右箭頭是否顯示
+      fade: true, // 預設 false 淡入淡出
+      asNavFor: '.slider-nav',//將滑塊設置為其他滑塊的導航（類或ID名稱）,適用於多個輪播圖共用一個導航
+      // variableWidth: true
+    });
+
+    $('.slider-nav').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: '.slider-for',
+      dots: true, // 預設 false 指示点
+      focusOnSelect: true, // 預設 false
+      // variableWidth: true
+    });
 
 
   </script>
