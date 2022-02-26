@@ -140,7 +140,7 @@
         text-align: center;
     }
     .private ul {
-        padding: 30px;
+        padding: 40px;
         display: inline-block;
     }
 /* ===== public 置中 ======= */
@@ -151,7 +151,7 @@
         text-align: center;
     }
     .public ul {
-        padding: 30px;
+        padding: 40px;
         display: inline-block;
     }
 
