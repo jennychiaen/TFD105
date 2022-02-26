@@ -65,44 +65,105 @@
 }
 
 
-.content h2{
+.content h2 {
     text-align: center;
     margin-top: 40px;
     margin-bottom: 40px;
     position: relative;
 }
 
-.content li{
+.content li {
     text-align: left;
     list-style-type: decimal;
     margin-bottom: 10px;
 }
-.content ul{
+.content ul {
     margin-left: 80px;
-    
+
 }
 
-@media screen and (max-width:768px){
- .content{
-     display: block;
- }
- .transport_private{
-     border-right: 0;
-     border-bottom: 5px #4E6F40 dashed;
-     width: 100%;
- }
- .transport_public{
-     width: 100%;
- }
+@media (min-width:576px) and (max-width:768px) {
+    .content h2 {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .content {
+        display: block;
+    }
+    .transport_private {
+        border-right: 0;
+        padding-bottom: 20px;
+        border-bottom: 5px #4E6F40 dashed;
+        width: 100%;
+    }
+    .transport_public {
+        padding-top: 20px;
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width:576px) {
+    .train{
+        margin-top: 10px;
+    }
+    .content h2 {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .content {
+        display: block;
+    }
+    .transport_private {
+        border-right: 0;
+        padding-bottom: 20px;
+        border-bottom: 5px #4E6F40 dashed;
+        width: 100%;
+    }
+    .transport_public {
+        padding-top: 20px;
+        width: 100%;
+    }
+    .content ul {
+        margin-left: 0;
+    }
+
+    /* ===== private 置中 ======= */
+    .transport_private {
+        padding: 0;
+    }
+
+    .private_des {
+        text-align: center;
+    }
+    .private ul {
+        padding: 30px;
+        display: inline-block;
+    }
+/* ===== public 置中 ======= */
+    .transport_public {
+        padding: 0;
+    }
+    .public_des {
+        text-align: center;
+    }
+    .public ul {
+        padding: 30px;
+        display: inline-block;
+    }
+
 }
 
 /* google_map */
-.googlemap h2{
-    margin:40px 0;
+.googlemap h2 {
+    margin: 40px 0;
     font-weight: 40px;
     color: #4E6F40;
 }
 
-.googlemap iframe{
-    width:100%;
+.googlemap iframe {
+    width: 100%;
 }
