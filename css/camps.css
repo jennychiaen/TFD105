@@ -132,6 +132,9 @@ main {
     .slick-dots{
         display: none;
     }
+    .photoside {
+        padding: 0px;
+    }
   
 
 }
@@ -155,7 +158,6 @@ main {
     }
     .photoside {
         padding: 0px;
-        box-sizing: border-box;
     }
 }
 
