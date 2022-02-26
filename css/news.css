@@ -8,6 +8,10 @@
 .banner img{
     display: block;
 }
+
+/* main{
+    width: 1200px;
+} */
 .banner img:first-child{
     margin: 0 auto;
 }
@@ -39,7 +43,7 @@
 
 /* main */
 .cards{
-    
+    /* max-width: 1200px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
