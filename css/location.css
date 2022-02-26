@@ -46,11 +46,11 @@
     margin-top: 10px;
     width: 50%;
     border-right:5px #4E6F40 dashed;
-    padding: 0 20px;
+    padding: 0 25px;
 }
 .transport_public{
     width: 50%;
-    padding: 0 20px;
+    padding: 0 25px;
 }
 .private{
     padding-top: 20px;
@@ -77,9 +77,22 @@
     list-style-type: decimal;
     margin-bottom: 10px;
 }
-.content ul {
-    margin-left: 80px;
+/* ===== ul 置中 ========= */
+.private_des {
+    text-align: center;
+}
+.private ul {
+    display: inline-block;
+    padding: 20px;
+    
+}
 
+.public_des {
+    text-align: center;
+}
+.public ul {
+    display: inline-block;
+    padding: 20px;
 }
 
 @media (min-width:576px) and (max-width:768px) {
@@ -106,7 +119,7 @@
 
 
 @media screen and (max-width:576px) {
-    .train{
+    .train {
         margin-top: 10px;
     }
     .content h2 {
@@ -119,43 +132,30 @@
     }
     .transport_private {
         border-right: 0;
-        padding-bottom: 20px;
+        padding: 20px;
         border-bottom: 5px #4E6F40 dashed;
         width: 100%;
     }
     .transport_public {
-        padding-top: 20px;
+        padding: 20px;
         width: 100%;
     }
     .content ul {
         margin-left: 0;
     }
 
-    /* ===== private 置中 ======= */
-    .transport_private {
-        padding: 0;
+    .private ul {
+
+        padding: 40px;
     }
 
-    .private_des {
-        text-align: center;
-    }
-    .private ul {
-        padding: 40px;
-        display: inline-block;
-    }
-/* ===== public 置中 ======= */
-    .transport_public {
-        padding: 0;
-    }
-    .public_des {
-        text-align: center;
-    }
     .public ul {
+
         padding: 40px;
-        display: inline-block;
     }
 
 }
+
 
 /* google_map */
 .googlemap h2 {
