@@ -41,6 +41,9 @@ main {
         float: none;
         margin-top: 40px;
     } 
+    /* .slick-slide{
+       height: 800px;
+    } */
    
     
 
@@ -121,17 +124,40 @@ main {
 @media screen and (max-width:800px){
     .big_photo{
         padding-bottom:0px ;
+        box-sizing: border-box;
     }
     .small_photo {
-        margin-top:0px;
+        margin-top:150px;
     }
     .slick-dots{
         display: none;
     }
-    
+  
 
 }
 
+@media screen and (max-width:768px){
+     .slider-for {
+        height: 0px ;
+        margin: 0 auto;
+    }
+    
+    .big_photo {
+        width: 180px;
+        height: 0px;
+        margin: 0 auto;
+        padding-bottom: 100px;
+    }
+    .small_photo img{
+       
+        
+        
+    }
+    .photoside {
+        padding: 0px;
+        box-sizing: border-box;
+    }
+}
 
 
 /* description-icon*/
