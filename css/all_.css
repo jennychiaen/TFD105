@@ -53,11 +53,20 @@ p{
     width: 40px;
     height: 40px;
     border: 1.5px solid rgba(255, 255, 255, 0.596);
+    text-align: center;
    
 }
 
 #myBtn:hover{
     background-color: #4E6F40;
+}
+
+@media screen and (max-width:575px){
+    
+#myBtn:hover{
+    background-color: #CA9429;
+}
+    
 }
 /* ================ icon  ==================== */
 #nav-icon1,#nav-icon2 {
@@ -79,7 +88,7 @@ p{
     padding-top: 20px;
   
 }
-    
+
 
 }
 /* ================ header  ==================== */

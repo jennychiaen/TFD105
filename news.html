@@ -17,6 +17,7 @@
 <body>
 
   <header>
+    <button onclick="topFunction()" id="myBtn" title="Gotop"><i class="fa-solid fa-chevron-up"></i></button>
     <div class="logo"><a href="./index.html"><img src="./img/logo.svg"></a></div>
     <div id="nav-icon1">
       <i class="fa-solid fa-bars"></i>
@@ -34,7 +35,7 @@
         <li><a href="./location.html">交通指南</a></li>
       </ul>
     </nav>
-  
+
   </header>
   <div class="wrapper">
     <main>
@@ -121,7 +122,7 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
-   //點擊icon
+    //點擊icon
     $("#nav-icon1").click(function () {
       $(this).toggleClass("open");
     });
@@ -130,6 +131,21 @@
     $("#nav-icon1,#nav-icon2").on("click", function () {
       $("nav.main_nav").slideToggle();
     });
+
+    //gototop
+    window.onscroll = scrollFunction;
+    function scrollFunction() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+
+    function topFunction(){
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
 
   </script>
 </body>
