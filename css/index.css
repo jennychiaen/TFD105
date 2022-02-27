@@ -2,6 +2,7 @@
 
 /*=============== big logo ================*/
 .big_logo{
+    display: block;
     background-color: whitesmoke;
     width: 342px;
     position: absolute;
