@@ -143,9 +143,12 @@ main{
     .camps_photos img{
         margin-bottom: 20px;
         width: 180px;
-    
-
     }
+     /* 第三、四張圖片不要出現 */
+     .camps_photos img:last-child, 
+     .camps_photos img:nth-child(3) {
+         display: none;
+     }
 }
 
 
