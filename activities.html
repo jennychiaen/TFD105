@@ -7,86 +7,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/activities.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
-    integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous">
+        integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Activities</title>
 </head>
 
 <body>
     <header>
+        <button onclick="topFunction()" id="myBtn" title="GoTop"><i class="fa-solid fa-chevron-up"></i></button>
         <div class="logo"><a href="./index.html"><img src="./img/logo.svg"></a></div>
         <div id="nav-icon1">
-          <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars"></i>
         </div>
         <nav class="main_nav">
-          <div id="nav-icon2">
-            <i class="fa-solid fa-xmark"></i>
-          </div>
-          <ul class="nav_list">
-            <li><a href="./news.html">最新消息</a></li>
-            <li><a href="./camps.html">帳篷旅館</a></li>
-            <li><a href="./activities.html">營區活動</a></li>
-            <li><a href="./diving.html">美食饗宴</a></li>
-            <li><a href="./reservation.html">線上預約</a></li>
-            <li><a href="./location.html">交通指南</a></li>
-          </ul>
+            <div id="nav-icon2">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <ul class="nav_list">
+                <li><a href="./news.html">最新消息</a></li>
+                <li><a href="./camps.html">帳篷旅館</a></li>
+                <li><a href="./activities.html">營區活動</a></li>
+                <li><a href="./diving.html">美食饗宴</a></li>
+                <li><a href="./reservation.html">線上預約</a></li>
+                <li><a href="./location.html">交通指南</a></li>
+            </ul>
         </nav>
-      </header>
-        <div class="wrapper">
-            <main>
-                <div class="checkin">
-                    <h2>
-                        15:00-Check In
-                    </h2>
-                </div>
-                <div class="cards">
-                    <div class="card" data-aos="fade-up" data-aos-duration="2000">
-                        <img src="./img/activities1.jpg">
-                        <div class="content">
-                            <h3>16:00-17:30園區DIY手做</h3>
-                            <h4>香氛蠟燭、多肉植物，創做出屬於自己獨一無二的作品。<br>
-                                *體驗依照村內當日安排為</h4>
-                        </div>
-                    </div>
-                    <div class="card" data-aos="fade-up" data-aos-duration="2000">
-                        <img src="./img/activities2.jpg">
-                        <div class="content">
-                            <h3>18:00-19:30晚餐BBQ</h3>
-                            <h4>優質蔬菜、新鮮海鮮結合美學帶你進入難以忘懷的美食饗宴。
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="card" data-aos="fade-up" data-aos-duration="2000">
-                        <img src="./img/activities3.jpg">
-                        <div class="content">
-                            <h3>22:00-23:00賞星星</h3>
-                            <h4>一起在寧靜大自然裡，仰望滿天星空，沉澱自己心靈，感謝大自然給我們的一切。</h4>
-                        </div>
-                    </div>
-                    <div class="card" data-aos="fade-up" data-aos-duration="2000">
-                        <img src="./img/activities5.jpg">
-                        <div class="content">
-                            <h3>07:00-09:00早餐</h3>
-                            <h4>以健康及新鮮食材帶你進入美好的一天。</h4>
-                        </div>
-                    </div>
-                    <div class="card" data-aos="fade-up" data-aos-duration="2000">
-                        <img src="./img/activities4.jpg">
-                        <div class="content">
-                            <h3>09:30-10:30瑜珈</h3>
-                            <h4>多久沒有好好傾聽自己內心內心聲音，來趟瑜珈課程伸展筋骨也舒展心靈。</h4>
-                        </div>
+    </header>
+    <div class="wrapper">
+        <main>
+            <div class="checkin">
+                <h2>
+                    15:00-Check In
+                </h2>
+            </div>
+            <div class="cards">
+                <div class="card" data-aos="fade-up" data-aos-duration="2000">
+                    <img src="./img/activities1.jpg">
+                    <div class="content">
+                        <h3>16:00-17:30園區DIY手做</h3>
+                        <h4>香氛蠟燭、多肉植物，創做出屬於自己獨一無二的作品。<br>
+                            *體驗依照村內當日安排為</h4>
                     </div>
                 </div>
-                <div class="checkout">
-                    <h2>
-                        11:00-Check Out
-                    </h2>
+                <div class="card" data-aos="fade-up" data-aos-duration="2000">
+                    <img src="./img/activities2.jpg">
+                    <div class="content">
+                        <h3>18:00-19:30晚餐BBQ</h3>
+                        <h4>優質蔬菜、新鮮海鮮結合美學帶你進入難以忘懷的美食饗宴。
+                        </h4>
+                    </div>
                 </div>
-            </main>
-        </div>
+                <div class="card" data-aos="fade-up" data-aos-duration="2000">
+                    <img src="./img/activities3.jpg">
+                    <div class="content">
+                        <h3>22:00-23:00賞星星</h3>
+                        <h4>一起在寧靜大自然裡，仰望滿天星空，沉澱自己心靈，感謝大自然給我們的一切。</h4>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-duration="2000">
+                    <img src="./img/activities5.jpg">
+                    <div class="content">
+                        <h3>07:00-09:00早餐</h3>
+                        <h4>以健康及新鮮食材帶你進入美好的一天。</h4>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-duration="2000">
+                    <img src="./img/activities4.jpg">
+                    <div class="content">
+                        <h3>09:30-10:30瑜珈</h3>
+                        <h4>多久沒有好好傾聽自己內心內心聲音，來趟瑜珈課程伸展筋骨也舒展心靈。</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="checkout">
+                <h2>
+                    11:00-Check Out
+                </h2>
+            </div>
+        </main>
+    </div>
     <footer>
         <div class="footer">
             <div class="address">311新竹縣五峰鄉23鄰464號</div>
@@ -105,17 +106,32 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-       //點擊icon
+        //點擊icon
         $("#nav-icon1").click(function () {
-          $(this).toggleClass("open");
+            $(this).toggleClass("open");
         });
-    
+
         // 點擊按鈕選單縮放
         $("#nav-icon1,#nav-icon2").on("click", function () {
-          $("nav.main_nav").slideToggle();
+            $("nav.main_nav").slideToggle();
         });
-    
-      </script>
+
+        //gototop
+        window.onscroll = scrollFunction;
+        function scrollFunction(){
+            if( document.body.scrollTop>200 || document.documentElement.scrollTop>200){
+                document.getElementById("myBtn").style.display = "block";
+            }else{
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        function topFunction(){
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
 </body>
 
 </html>

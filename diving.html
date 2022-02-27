@@ -7,37 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
-    integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous">
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
+        integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/diving.css">
     <title>Diving</title>
 </head>
 
 <body>
     <header>
-        <header>
-            <div class="logo"><a href="./index.html"><img src="./img/logo.svg"></a></div>
-            <div id="nav-icon1">
-              <i class="fa-solid fa-bars"></i>
-            </div>
-            
-            <nav class="main_nav">
-              <div id="nav-icon2">
+        <button onclick="topFunction()" id="myBtn" title="Gotop"><i class="fa-solid fa-chevron-up"></i></button>
+        <div class="logo"><a href="./index.html"><img src="./img/logo.svg"></a></div>
+        <div id="nav-icon1">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <nav class="main_nav">
+            <div id="nav-icon2">
                 <i class="fa-solid fa-xmark"></i>
-              </div>
-        
-              <ul class="nav_list">
+            </div>
+
+            <ul class="nav_list">
                 <li><a href="./news.html">最新消息</a></li>
                 <li><a href="./camps.html">帳篷旅館</a></li>
                 <li><a href="./activities.html">營區活動</a></li>
                 <li><a href="./diving.html">美食饗宴</a></li>
                 <li><a href="./reservation.html">線上預約</a></li>
                 <li><a href="./location.html">交通指南</a></li>
-              </ul>
-            </nav>
-          
-          </header>
+            </ul>
+        </nav>
+
     </header>
     <div class="wrapper">
         <main>
@@ -96,17 +95,30 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-       //點擊icon
+        //點擊icon
         $("#nav-icon1").click(function () {
-          $(this).toggleClass("open");
+            $(this).toggleClass("open");
         });
-    
+
         // 點擊按鈕選單縮放
         $("#nav-icon1,#nav-icon2").on("click", function () {
-          $("nav.main_nav").slideToggle();
+            $("nav.main_nav").slideToggle();
         });
-    
-      </script>
+        //gototop
+        window.onscroll = scrollFunction;
+        function scrollFunction() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
 </body>
 
 </html>

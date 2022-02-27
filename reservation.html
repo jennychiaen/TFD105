@@ -15,6 +15,7 @@
 
 <body>
   <header>
+    <button onclick="topFunction()" id="myBtn" title="Gotop"><i class="fa-solid fa-chevron-up"></i></button>
     <div class="logo"><a href="./index.html"><img src="./img/logo.svg"></a></div>
     <div id="nav-icon1">
       <i class="fa-solid fa-bars"></i>
@@ -33,7 +34,7 @@
       </ul>
     </nav>
   </header>
-    <div class="wrapper">
+  <div class="wrapper">
     <main>
       <div class="banner">
         <img src="./img/banner_big.jpg">
@@ -64,23 +65,23 @@
           <div class="form03">
             <h4>請選擇入住房型：</h4>
             <div class="roomtype">
-            <select  class="people">
-              <option selected>2人房</option>
-              <option>4人房</option>
-            </select>
-            <select class="room">
-              <option selected>1間</option>
-              <option>2間</option>
-              <option>3間</option>
-              <option>4間</option>
-              <option>5間</option>
-            </select>
-          </div>
+              <select class="people">
+                <option selected>2人房</option>
+                <option>4人房</option>
+              </select>
+              <select class="room">
+                <option selected>1間</option>
+                <option>2間</option>
+                <option>3間</option>
+                <option>4間</option>
+                <option>5間</option>
+              </select>
+            </div>
           </div>
         </div>
         <div class="form03_2">
-          <select  class="people_2">
-            <option >2人房</option>
+          <select class="people_2">
+            <option>2人房</option>
             <option selected>4人房</option>
           </select>
           <select class="room_2">
@@ -89,8 +90,8 @@
             <option>2間</option>
             <option>3間</option>
             <option>4間</option>
-          </select> 
-          </div>
+          </select>
+        </div>
         <div class="step03">
           <div class="steps03">
             <h4>step</h4>
@@ -136,7 +137,7 @@
     </div>
   </footer>
   <script>
-   //點擊icon
+    //點擊icon
     $("#nav-icon1").click(function () {
       $(this).toggleClass("open");
     });
@@ -145,6 +146,21 @@
     $("#nav-icon1,#nav-icon2").on("click", function () {
       $("nav.main_nav").slideToggle();
     });
+
+    //gototop
+    window.onscroll = scrollFunction;
+    function scrollFunction() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
 
   </script>
 </body>
