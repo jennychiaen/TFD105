@@ -87,7 +87,9 @@
         <div class="content">
           <h2>豪華四人帳-兩大床</h2>
           <h4>入住人數：4人 *每帳限加一床，最多五位入住<br>
-            設施與備品：冷暖空調、夜燈、充電插座 more...</h4>
+            設施與備品：冷暖空調、夜燈、充電插座 <a href="#" class="more" 
+            onclick="moreFunction()">&nbsp;more...</a>
+          </h4>
           <table>
             <tr style="background-color:#4E6F40">
               <td>&nbsp</td>
@@ -122,6 +124,32 @@
       </div>
     </main>
   </div>
+  <!--openwindow-->
+  <div id="more" class="window">
+    <div class="window-content" action="#">
+      <span class="close" title="Close Modal">×</span>
+      <div class="container">
+        <h3>公共區設施與備品：</h3>
+        <ul>
+          <li>停車場</li>
+          <li>用餐區備有飲用冷熱水</li>
+          <li>櫃台備有防蚊液</li>
+        </ul>
+        <h3>帳篷設施與備品：</h3>
+        <ul>
+          <li>冷暖空調風扇</li>
+          <li>夜燈</li>
+          <li>充電插座</li>
+          <li>彈簧床墊</li>
+          <li>高級寢具</li>
+          <li>乾濕分離五星級衛浴：</li>
+          <li>24小時熱水供應，附沐浴乳、洗髮精、吹風機、嬰兒澡盆</li>
+          <li>請自行攜帶：牙刷、牙膏、浴巾、拖鞋、雨具、保暖衣物</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
   <footer>
     <div class="footer">
       <div class="address">311新竹縣五峰鄉23鄰464號</div>
@@ -183,7 +211,15 @@
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
-
+    //open window 第二種方法
+    var window_el=document.getElementsByClassName("window")[0];
+    var close_el = document.getElementsByClassName("close")[0];
+    function moreFunction(){
+      window_el.style.display="block";
+    };
+    close_el.addEventListener("click",function(){
+      window_el.style.display="none";
+    })
 
   </script>
 </body>
