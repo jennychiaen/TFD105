@@ -40,6 +40,7 @@ p{
     font-size: 12px;
 }
 
+/* top button */
 #myBtn{
     display: none;   /*初始化不顯示*/
     position: fixed;
@@ -214,8 +215,6 @@ header{
 
 
 
-
-
 /* jquery 會預設display:none */
 @media screen and (min-width: 902px){
     nav.main_nav {
@@ -276,7 +275,6 @@ nav.main_nav {
 
 }
 
-  
   
   
 /* ================ footer ==================== */

@@ -338,8 +338,6 @@ td {
     margin: 0;
     padding: 0;
     text-align: left;
-   
-
 }
 
 
@@ -349,6 +347,7 @@ td {
     text-align: left;
     margin: 0;
 }
+
 @media (min-width: 576px) and (max-width: 767px){
 .window-content {
     border: 1.5px solid #a6a6a6a6;
