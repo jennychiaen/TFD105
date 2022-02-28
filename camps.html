@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  
+
   <header>
     <button onclick="topFunction()" id="myBtn" title="Gotop"><i class="fa-solid fa-chevron-up"></i></button>
     <div class="logo"><a href="./index.html"><img src="./img/logo.svg"></a></div>
@@ -40,18 +40,18 @@
   <div class="wrapper">
     <main>
       <div class="bedicon_forCellphone">
-          <div class="bedicon_cellphone">
-            <div class="onebed">
-              <a href="./camps.html"><img src="./img/bed .jpg">
-                <h2>豪華兩人床</h2>
-              </a>
-            </div>
-            <div class="twobeds">
-              <a href="./camps_2.html"><img src="./img/two_bed .jpg">
-                <h2>豪華四人床</h2>
-              </a>
-            </div>
+        <div class="bedicon_cellphone">
+          <div class="onebed">
+            <a href="./camps.html"><img src="./img/bed .jpg">
+              <h2>豪華兩人床</h2>
+            </a>
           </div>
+          <div class="twobeds">
+            <a href="./camps_2.html"><img src="./img/two_bed .jpg">
+              <h2>豪華四人床</h2>
+            </a>
+          </div>
+        </div>
       </div>
       <!-- 兩行輪播/套用兩個一樣的照片 -->
       <div class="photoside">
@@ -85,11 +85,13 @@
 
           </div>
         </div>
-        <span></span>
+        <span class="line"></span>
         <div class="content">
           <h2>豪華兩人帳-一大床</h2>
           <h4>入住人數：2人 *每帳限加一床，最多三位入住<br>
-            設施與備品：冷暖空調、夜燈、充電插座 more...</h4>
+            設施與備品：冷暖空調、夜燈、充電插座 <a href="#" class="more"
+              onclick="document.getElementById('more').style.display='block'">&nbsp;more...</a>
+          </h4>
           <table>
             <tr style="background-color:#4E6F40">
               <td>&nbsp</td>
@@ -124,6 +126,33 @@
       </div>
     </main>
   </div>
+  <!-- openwindow -->
+  <div id="more" class="window">
+    <div class="window-content" action="#">
+      <span onclick="document.getElementById('more').style.display='none'" class="close" title="Close Modal">×</span>
+
+      <div class="container">
+        <h3>公共區設施與備品：</h3>
+        <ul>
+          <li>停車場</li>
+          <li>用餐區備有飲用冷熱水</li>
+          <li>櫃台備有防蚊液</li>
+        </ul>
+        <h3>帳篷設施與備品：</h3>
+        <ul>
+          <li>冷暖空調風扇</li>
+          <li>夜燈</li>
+          <li>充電插座</li>
+          <li>彈簧床墊</li>
+          <li>高級寢具</li>
+          <li>乾濕分離五星級衛浴：</li>
+          <li>24小時熱水供應，附沐浴乳、洗髮精、吹風機、嬰兒澡盆</li>
+          <li>請自行攜帶：牙刷、牙膏、浴巾、拖鞋、雨具、保暖衣物</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
   <footer>
     <div class="footer">
       <div class="address">311新竹縣五峰鄉23鄰464號</div>
@@ -175,19 +204,26 @@
 
     //gototop
     window.onscroll = scrollFunction;
-    function scrollFunction(){
-      if( document.body.scrollTop >200 || document.documentElement.scrollTop >200){
-        document.getElementById("myBtn").style.display ="block";
-      }else{
-        document.getElementById("myBtn").style.display ="none";
+    function scrollFunction() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
       }
     }
-    function topFunction(){
+    function topFunction() {
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
 
+    //open window
+    var window = document.getElementById('more');
 
+    window.onclick = function (event) {
+      if (event.target == window) {
+        window.style.display = "none";
+      }
+    }
 
   </script>
 </body>
