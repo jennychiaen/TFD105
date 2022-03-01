@@ -90,15 +90,17 @@ p{
     display: block;
     height: 10px;
     font-size: 25px;
-    
-   
    
 }
+
 #nav-icon1 >.fa-solid {
     color: #4E6f40;
     padding:10px;
     padding-top: 20px;
   
+}
+#nav-icon2 >.fa-solid{
+    color: #4E6f40;
 }
 
 
