@@ -72,7 +72,7 @@ p{
     color: #475e3d;
 }
 #myBtn i:hover{
-    color: #475e3d;
+    color: #CA9429;
 }
 
 @media screen and (max-width:575px){
@@ -91,7 +91,7 @@ p{
     font-size: 32px;
 }
 #myBtn i:hover{
-    color:none;
+    color:#475e3d;
 }
 }
 /* ================ icon  ==================== */
