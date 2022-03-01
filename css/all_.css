@@ -43,6 +43,7 @@ p{
 /* top button */
 
 #myBtn{
+    display: none;
     background-color: transparent;
     position: fixed;
     bottom: 30px;
