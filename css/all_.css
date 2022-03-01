@@ -93,15 +93,13 @@ p{
    
 }
 
-#nav-icon1 >.fa-solid {
+#nav-icon1 >.fa-solid, #nav-icon2 >.fa-solid {
     color: #4E6f40;
     padding:10px;
     padding-top: 20px;
   
 }
-#nav-icon2 >.fa-solid{
-    color: #4E6f40;
-}
+
 
 
 }
