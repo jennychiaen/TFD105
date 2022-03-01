@@ -68,12 +68,17 @@ p{
 #myBtn:hover{
     background-color: #CA9429;
 }
-.fa-chevron-up:before{
+/* .fa-chevron-up:before{
+    text-align: center;
+    line-height:30px ;
+    margin: 0 auto;
+} */
+
+.fa-solid{
     text-align: center;
     line-height:30px ;
     margin: 0 auto;
 }
-    
 }
 /* ================ icon  ==================== */
 #nav-icon1,#nav-icon2 {
