@@ -208,8 +208,7 @@
       }
     }
     function topFunction(){
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
+      $('html,body').animate({scrollTop:0},700); 
     }
     //open window 第二種寫法
     var window_el=document.getElementsByClassName("window")[0];
