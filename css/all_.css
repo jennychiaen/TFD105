@@ -74,7 +74,7 @@ p{
     margin: 0 auto;
 } */
 
-.fa-solid{
+#myBtn >.fa-solid{
     text-align: center;
     line-height:30px ;
     margin: 0 auto;
