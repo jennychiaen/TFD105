@@ -139,17 +139,18 @@
                 },
 
             ]
-        });</script>
-        //  gototop
-        <script>window.onscroll = scrollFunction; //每當畫面捲動觸發一次
+        });
 
+        //  gototop
+
+        window.onscroll = scrollFunction; //每當畫面捲動觸發一次
         function scrollFunction() {
             if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
                 document.getElementById("myBtn").style.display = "block";
-                document.getElementsByClassName("big_logo")[0].style.display = "none";   //big logo 滑動縮小
+                document.getElementsByClassName("big_logo")[0].style.display = "none";//big logo 滑動縮小
             } else {
                 document.getElementById("myBtn").style.display = "none";
-                document.getElementsByClassName("big_logo")[0].style.display = "block";
+                
             }
         }//網頁捲動超過200pixel就會跑出來 display設定成block 跑回上面就隱藏。
 
@@ -158,24 +159,22 @@
             document.body.scrollTop = 0; // For Safari
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         };
-    </script>
-    <!-- <script>
-    
-        if ($(window).width() < 1200) {
-            document.getElementsByClassName("big_logo")[0].style.display = "none";
-        } else {
-            function scrollFunction() {
-            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-             
-                document.getElementsByClassName("big_logo")[0].style.display = "none";   //big logo 滑動縮小
-            } else {
-            
-                document.getElementsByClassName("big_logo")[0].style.display = "block";
-            }
-        }//網頁捲動超過200pixel就會跑出來 display設定成block 跑回上面就隱藏。
 
-        }
-    </script> -->
+
+
+        // if ($(window).width() < 1200) {
+        //     document.getElementsByClassName("big_logo")[0].style.display = "none";
+        // } else {
+        //     function scrollFunction() {
+        //         if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        //             document.getElementsByClassName("big_logo")[0].style.display = "none";   //big logo 滑動縮小
+        //         } else {
+        //             document.getElementsByClassName("big_logo")[0].style.display = "block";
+        //         }
+        //     }//網頁捲動超過200pixel就會跑出來 display設定成block 跑回上面就隱藏。
+
+        // }
+    </script>
 </body>
 
 </html>
