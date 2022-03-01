@@ -79,6 +79,10 @@ p{
     line-height:30px ;
     margin: 0 auto;
 }
+#topBtn i {
+    margin: 0 auto;
+    font-size: 32px;
+}
 }
 /* ================ icon  ==================== */
 #nav-icon1,#nav-icon2 {
