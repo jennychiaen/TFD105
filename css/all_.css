@@ -41,8 +41,8 @@ p{
 }
 
 /* top button */
-#myBtn{
-    display: none;   /*初始化不顯示*/
+/*#myBtn{
+    display: none;   初始化不顯示
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -56,31 +56,39 @@ p{
     border: 1.5px solid rgba(255, 255, 255, 0.596);
     text-align: center;
     z-index: 5;
-   
+} */
+#myBtn{
+    background-color: transparent;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
 }
 
-#myBtn:hover{
-    background-color: #4E6F40;
+#myBtn i{
+    font-size: 40px;
+    color: #446138;
+}
+#myBtn i:hover{
+    color: #CA9429;
 }
 
 @media screen and (max-width:575px){
     
-#myBtn:hover{
-    background-color: #CA9429;
-}
+
 /* .fa-chevron-up:before{
     text-align: center;
     line-height:30px ;
     margin: 0 auto;
 } */
 
-#myBtn >.fa-solid{
-    text-align: center;
-    line-height:30px ;
-    margin: 0 auto;
+#myBtn{
+    right: 10px;
 }
 #topBtn i {
-    margin: 0 auto;
+   
     font-size: 32px;
 }
 }
